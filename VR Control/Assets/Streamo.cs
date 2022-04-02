@@ -15,16 +15,16 @@ public class VideoPacket
 public class Streamo : MonoBehaviour
 {
     // Rigidbody variable to hold the player ball's rigidbody instance
-    private SpriteRenderer s;
+    private Renderer s;
 
     private IWebSocketClient client;
 
-    private string url = "ws://192.168.18.11:8080/ws";
+    private string url = "ws://192.168.18.39:8080/ws";
 
     // Start is called before the first frame update
     void Start()
     {
-        s = GetComponent<SpriteRenderer>();
+        s = GetComponent<Renderer>();
         client = WebSocketClientFactory.Create(url);
         client.Connect();
         Debug.Log("[Streamo] on create");
@@ -45,13 +45,14 @@ public class Streamo : MonoBehaviour
         if (wsEvent.Type == WebSocketEvent.WebSocketEventType.Payload)
         {
             Debug.Log("got data!");
-            string result = System.Text.Encoding.UTF8.GetString(wsEvent.Payload);
-            VideoPacket packet = JsonUtility.FromJson< VideoPacket>(result);
-            Debug.Log("parsed data!" + packet);
-            byte[] data = System.Convert.FromBase64String(packet.data);
+            //string result = System.Text.Encoding.UTF8.GetString(wsEvent.Payload);
+            //VideoPacket packet = JsonUtility.FromJson< VideoPacket>(result);
+            //Debug.Log("parsed data!" + packet);
+            //byte[] data = System.Convert.FromBase64String(packet.data);
             Texture2D tex = new Texture2D(2, 2);
-            tex.LoadImage(data); 
-            s.material.mainTexture = tex;
+            tex.LoadImage(wsEvent.Payload);
+
+            GetComponent<Renderer>().material.mainTexture = tex;
         }
 
         if (wsEvent.Type == WebSocketEvent.WebSocketEventType.Error)

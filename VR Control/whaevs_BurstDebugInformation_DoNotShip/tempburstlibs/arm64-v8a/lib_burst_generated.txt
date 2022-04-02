@@ -1,0 +1,188 @@
+Library: lib_burst_generated
+--platform=Android
+--backend=burst-llvm-11
+--target=ARMV8A_AARCH64
+--global-safety-checks-setting=Off
+--dump=Function
+--float-precision=Standard
+--disable-warnings=BC1370
+--compilation-defines=UNITY_2021_2_17
+--compilation-defines=UNITY_2021_2
+--compilation-defines=UNITY_2021
+--compilation-defines=UNITY_5_3_OR_NEWER
+--compilation-defines=UNITY_5_4_OR_NEWER
+--compilation-defines=UNITY_5_5_OR_NEWER
+--compilation-defines=UNITY_5_6_OR_NEWER
+--compilation-defines=UNITY_2017_1_OR_NEWER
+--compilation-defines=UNITY_2017_2_OR_NEWER
+--compilation-defines=UNITY_2017_3_OR_NEWER
+--compilation-defines=UNITY_2017_4_OR_NEWER
+--compilation-defines=UNITY_2018_1_OR_NEWER
+--compilation-defines=UNITY_2018_2_OR_NEWER
+--compilation-defines=UNITY_2018_3_OR_NEWER
+--compilation-defines=UNITY_2018_4_OR_NEWER
+--compilation-defines=UNITY_2019_1_OR_NEWER
+--compilation-defines=UNITY_2019_2_OR_NEWER
+--compilation-defines=UNITY_2019_3_OR_NEWER
+--compilation-defines=UNITY_2019_4_OR_NEWER
+--compilation-defines=UNITY_2020_1_OR_NEWER
+--compilation-defines=UNITY_2020_2_OR_NEWER
+--compilation-defines=UNITY_2020_3_OR_NEWER
+--compilation-defines=UNITY_2021_1_OR_NEWER
+--compilation-defines=UNITY_2021_2_OR_NEWER
+--compilation-defines=USE_SEARCH_ENGINE_API
+--compilation-defines=USE_SEARCH_TABLE
+--compilation-defines=USE_SEARCH_MODULE
+--compilation-defines=USE_PROPERTY_DATABASE
+--compilation-defines=USE_SEARCH_EXTENSION_API
+--compilation-defines=SCENE_TEMPLATE_MODULE
+--compilation-defines=ENABLE_AR
+--compilation-defines=ENABLE_AUDIO
+--compilation-defines=ENABLE_CACHING
+--compilation-defines=ENABLE_CLOTH
+--compilation-defines=ENABLE_EVENT_QUEUE
+--compilation-defines=ENABLE_MICROPHONE
+--compilation-defines=ENABLE_MULTIPLE_DISPLAYS
+--compilation-defines=ENABLE_PHYSICS
+--compilation-defines=ENABLE_TEXTURE_STREAMING
+--compilation-defines=ENABLE_UNET
+--compilation-defines=ENABLE_LZMA
+--compilation-defines=ENABLE_UNITYEVENTS
+--compilation-defines=ENABLE_VR
+--compilation-defines=ENABLE_WEBCAM
+--compilation-defines=ENABLE_UNITYWEBREQUEST
+--compilation-defines=ENABLE_WWW
+--compilation-defines=ENABLE_CLOUD_SERVICES
+--compilation-defines=ENABLE_CLOUD_SERVICES_COLLAB
+--compilation-defines=ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
+--compilation-defines=ENABLE_CLOUD_SERVICES_ADS
+--compilation-defines=ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+--compilation-defines=ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+--compilation-defines=ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING
+--compilation-defines=ENABLE_CLOUD_SERVICES_PURCHASING
+--compilation-defines=ENABLE_CLOUD_SERVICES_ANALYTICS
+--compilation-defines=ENABLE_CLOUD_SERVICES_UNET
+--compilation-defines=ENABLE_CLOUD_SERVICES_BUILD
+--compilation-defines=ENABLE_CLOUD_LICENSE
+--compilation-defines=ENABLE_EDITOR_HUB_LICENSE
+--compilation-defines=ENABLE_WEBSOCKET_CLIENT
+--compilation-defines=ENABLE_DIRECTOR_AUDIO
+--compilation-defines=ENABLE_DIRECTOR_TEXTURE
+--compilation-defines=ENABLE_MANAGED_JOBS
+--compilation-defines=ENABLE_MANAGED_TRANSFORM_JOBS
+--compilation-defines=ENABLE_MANAGED_ANIMATION_JOBS
+--compilation-defines=ENABLE_MANAGED_AUDIO_JOBS
+--compilation-defines=ENABLE_RUNTIME_PERMISSIONS
+--compilation-defines=ENABLE_ENGINE_CODE_STRIPPING
+--compilation-defines=ENABLE_ONSCREEN_KEYBOARD
+--compilation-defines=ENABLE_MANAGED_UNITYTLS
+--compilation-defines=INCLUDE_DYNAMIC_GI
+--compilation-defines=ENABLE_SCRIPTING_GC_WBARRIERS
+--compilation-defines=PLATFORM_SUPPORTS_MONO
+--compilation-defines=ENABLE_VIDEO
+--compilation-defines=ENABLE_ACCELERATOR_CLIENT_DEBUGGING
+--compilation-defines=PLATFORM_ANDROID
+--compilation-defines=TEXTCORE_1_0_OR_NEWER
+--compilation-defines=UNITY_ANDROID
+--compilation-defines=UNITY_ANDROID_API
+--compilation-defines=ENABLE_EGL
+--compilation-defines=ENABLE_NETWORK
+--compilation-defines=ENABLE_RUNTIME_GI
+--compilation-defines=ENABLE_CRUNCH_TEXTURE_COMPRESSION
+--compilation-defines=UNITY_CAN_SHOW_SPLASH_SCREEN
+--compilation-defines=UNITY_HAS_GOOGLEVR
+--compilation-defines=UNITY_HAS_TANGO
+--compilation-defines=ENABLE_SPATIALTRACKING
+--compilation-defines=ENABLE_ETC_COMPRESSION
+--compilation-defines=PLATFORM_EXTENDS_VULKAN_DEVICE
+--compilation-defines=PLATFORM_HAS_MULTIPLE_SWAPCHAINS
+--compilation-defines=UNITY_ANDROID_SUPPORTS_SHADOWFILES
+--compilation-defines=PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP
+--compilation-defines=ENABLE_UNITYADS_RUNTIME
+--compilation-defines=UNITY_UNITYADS_API
+--compilation-defines=ENABLE_MONO
+--compilation-defines=NET_STANDARD_2_0
+--compilation-defines=NET_STANDARD
+--compilation-defines=DEVELOPMENT_BUILD
+--compilation-defines=ENABLE_PROFILER
+--compilation-defines=DEBUG
+--compilation-defines=TRACE
+--compilation-defines=UNITY_ASSERTIONS
+--compilation-defines=ENABLE_CUSTOM_RENDER_TEXTURE
+--compilation-defines=ENABLE_DIRECTOR
+--compilation-defines=ENABLE_LOCALIZATION
+--compilation-defines=ENABLE_SPRITES
+--compilation-defines=ENABLE_TERRAIN
+--compilation-defines=ENABLE_TILEMAP
+--compilation-defines=ENABLE_TIMELINE
+--compilation-defines=ENABLE_LEGACY_INPUT_MANAGER
+--compilation-defines=PACKAGE_PHYSICS
+--compilation-defines=PACKAGE_PHYSICS2D
+--compilation-defines=PACKAGE_TILEMAP
+--compilation-defines=PACKAGE_ANIMATION
+--compilation-defines=PACKAGE_UITOOLKIT
+--compilation-defines=CSHARP_7_OR_LATER
+--compilation-defines=CSHARP_7_3_OR_NEWER
+--compilation-defines=USING_XR_MANAGEMENT
+--compilation-defines=USING_XR_SDK_OCULUS
+--compilation-defines=MODULE_AI_EXISTS
+--compilation-defines=MODULE_ANIMATION_EXISTS
+--compilation-defines=MODULE_PHYSICS_EXISTS
+--compilation-defines=MODULE_PHYSICS_2D_EXISTS
+--compilation-defines=MODULE_PARTICLE_SYSTEM_EXISTS
+--compilation-defines=XR_MGMT_GTE_320
+--compilation-defines=UNITY_UNET_PRESENT
+--compilation-defines=TIMELINE_FRAMEACCURATE
+--compilation-defines=USING_COMPATIBLE_OCULUS_XR_PLUGIN_VERSION
+--compilation-defines=UNITY_ANALYTICS
+--generate-link-xml=Temp/burst.link.xml
+--debug=Full
+--output=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/tempburstlibs/arm64-v8a/lib_burst_generated
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/UnityEngine.UI.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/Oculus.Platform.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/Assembly-CSharp.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/Unity.VisualScripting.Flow.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/Unity.Mathematics.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/Oculus.Spatializer.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/Unity.VisualScripting.State.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/Unity.VisualScripting.Core.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/Oculus.Interaction.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/UnityEngine.XR.LegacyInputHelpers.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/Unity.XR.Oculus.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/Unity.Burst.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/Unity.TextMeshPro.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/Unity.Netcode.Runtime.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/WebSocket Transport for Netcode for GameObjects.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/Unity.Timeline.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/Unity.Collections.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/Oculus.VR.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/Oculus.Interaction.Samples.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/Facebook.WitAI.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/Oculus.AudioManager.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/VoiceSDK.Runtime.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/Unity.Netcode.Components.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/AssistantCoreSDKRuntime.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/Unity.XR.Management.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/Oculus.LipSync.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/UnityEngine.SpatialTracking.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/Unity.Subsystem.Registration.dll
+--assembly-folder=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/
+--pdb-search-paths=Temp/ManagedSymbols/
+--method=Unity.Jobs.IJobExtensions+JobStruct`1[[Unity.Collections.LowLevel.Unsafe.UnsafeStream+ConstructJobList, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(Unity.Collections.LowLevel.Unsafe.UnsafeStream+ConstructJobList&, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--428d454056b9288c93f4435d6e6f7fda
+--method=Unity.Jobs.IJobExtensions+JobStruct`1[[Unity.Collections.LowLevel.Unsafe.UnsafeStream+ConstructJob, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(Unity.Collections.LowLevel.Unsafe.UnsafeStream+ConstructJob&, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--164a9957f2c75e5d4b481d1ceff90393
+--method=Unity.Burst.BurstCompiler+BurstCompilerHelper, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::IsBurstEnabled()--8c2be93e18276203cbd918daa2748a10
+--method=Unity.Collections.AllocatorManager+StackAllocator, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Try(System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Collections.AllocatorManager+Block&, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null)--478bf3abafa12cba2083fb45bca79b9c
+--method=Unity.Collections.AllocatorManager+SlabAllocator, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Try(System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Collections.AllocatorManager+Block&, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null)--2434a4c10d01dbab5e7438b2b580d1d1
+--method=Unity.Jobs.IJobExtensions+JobStruct`1[[Unity.Collections.NativeListDisposeJob, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(Unity.Collections.NativeListDisposeJob&, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--4a1dc7df3f09b836e86a41d0d8fb4229
+--method=Unity.Jobs.IJobExtensions+JobStruct`1[[Unity.Collections.NativeQueueDisposeJob, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(Unity.Collections.NativeQueueDisposeJob&, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--68a8ea65a4f1ea752d1138be3be73a9a
+--method=Unity.Jobs.IJobExtensions+JobStruct`1[[Unity.Collections.NativeReferenceDisposeJob, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(Unity.Collections.NativeReferenceDisposeJob&, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--baf840f8150b604b0fd300ceb19dd50e
+--method=Unity.Jobs.IJobExtensions+JobStruct`1[[Unity.Collections.NativeStream+ConstructJobList, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(Unity.Collections.NativeStream+ConstructJobList&, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--959783104064e8c81fba5d33d94ead01
+--method=Unity.Jobs.IJobExtensions+JobStruct`1[[Unity.Collections.NativeStream+ConstructJob, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(Unity.Collections.NativeStream+ConstructJob&, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--b78f808503c8b5fe97a83e833bd5871d
+--method=Unity.Collections.RewindableAllocator, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Try(System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Collections.AllocatorManager+Block&, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null)--cf20d690c33ab495d44c548cd6a31428
+--method=Unity.Collections.xxHash3, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::_mono_to_burst_Hash64Long(System.Byte*, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Byte*, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Int64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Byte*, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.UInt64&, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--96dd5dd97872ccc5af95123bc5fbb01e
+--method=Unity.Collections.xxHash3, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::_mono_to_burst_Hash128Long(System.Byte*, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Byte*, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Int64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.Byte*, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Mathematics.uint4&, Unity.Mathematics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)--ab6cc0ae9b35bff148fbeb9630fc50a5
+--method=Unity.Jobs.IJobExtensions+JobStruct`1[[Unity.Collections.LowLevel.Unsafe.UnsafeHashMapDataDisposeJob, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(Unity.Collections.LowLevel.Unsafe.UnsafeHashMapDataDisposeJob&, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--2ef0a503423574beae197ba4b01ed0be
+--method=Unity.Jobs.IJobExtensions+JobStruct`1[[Unity.Collections.LowLevel.Unsafe.UnsafeHashMapDisposeJob, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(Unity.Collections.LowLevel.Unsafe.UnsafeHashMapDisposeJob&, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--82b0ba09e7cb740f2e20482d3814830b
+--method=Unity.Jobs.IJobExtensions+JobStruct`1[[Unity.Collections.LowLevel.Unsafe.UnsafeDisposeJob, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(Unity.Collections.LowLevel.Unsafe.UnsafeDisposeJob&, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--276b96e48754d7f5ba865bd7f5b37c11
+--method=Unity.Jobs.IJobExtensions+JobStruct`1[[Unity.Collections.LowLevel.Unsafe.UnsafeStream+DisposeJob, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::Execute(Unity.Collections.LowLevel.Unsafe.UnsafeStream+DisposeJob&, Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|System.IntPtr, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|Unity.Jobs.LowLevel.Unsafe.JobRanges&, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null|System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089)--ca60ab232d19a9f4380a530fa0d222cf
+
