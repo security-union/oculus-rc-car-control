@@ -41,6 +41,7 @@ public class Streamo : MonoBehaviour
             return;
         }
         WebSocketEvent wsEvent = client.Poll();
+        client.EventQueue.Clear();
         Debug.Log("ws event " + wsEvent.Type);
         if (wsEvent.Type == WebSocketEvent.WebSocketEventType.Payload)
         {
@@ -51,8 +52,8 @@ public class Streamo : MonoBehaviour
             //byte[] data = System.Convert.FromBase64String(packet.data);
             Texture2D tex = new Texture2D(2, 2);
             tex.LoadImage(wsEvent.Payload);
-
             GetComponent<Renderer>().material.mainTexture = tex;
+            Resources.UnloadUnusedAssets();
         }
 
         if (wsEvent.Type == WebSocketEvent.WebSocketEventType.Error)
@@ -64,6 +65,5 @@ public class Streamo : MonoBehaviour
         {
             Debug.Log("ws connected");
         }
-
     }
 }

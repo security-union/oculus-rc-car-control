@@ -1086,6 +1086,7 @@ UnityEngine.RenderTexture::set_width
 UnityEngine.RenderTexture::get_graphicsFormat
 UnityEngine.RenderTexture::GetActive
 UnityEngine.RenderTexture::GetTemporary_Internal_Injected
+UnityEngine.Resources::UnloadUnusedAssets
 UnityEngine.Resources::GetBuiltinResource
 UnityEngine.ResourcesAPIInternal::Load
 UnityEngine.ResourcesAPIInternal::FindObjectsOfTypeAll
