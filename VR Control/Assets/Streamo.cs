@@ -19,7 +19,7 @@ public class Streamo : MonoBehaviour
 
     private IWebSocketClient client;
 
-    private string url = "ws://192.168.18.39:8080/ws";
+    private string url = "ws://192.168.18.11:8080/ws";
 
     // Start is called before the first frame update
     void Start()
