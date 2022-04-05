@@ -21772,7 +21772,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Streamo__ctor_m8401695E5C1BAECEAE9E8FC29
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// private string url = "ws://192.168.18.11:8080/ws";
+		// public string url = "ws://192.168.18.11:8080/ws";
 		__this->___url_6 = _stringLiteralB9C7F7C37D47789FB4FED07EEDADA846710E4052;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___url_6), (void*)_stringLiteralB9C7F7C37D47789FB4FED07EEDADA846710E4052);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
