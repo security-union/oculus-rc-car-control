@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using Netcode.Transports.WebSocket;
+using Google.Protobuf;
+
 
 using UnityEngine;
 
@@ -39,6 +41,17 @@ public class Streamo : MonoBehaviour
             client.Connect();
             Debug.Log("client is null, c# sucks");
             return;
+        }
+        if (client.ReadyState == WebSocketSharp.WebSocketState.Open)
+        {
+            var primaryThumbstick = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
+            var secondaryThumbstick = OVRInput.Get(OVRInput.Axis2D.SecondaryThumbstick);
+            OculusControllerState state = new OculusControllerState();
+            state.PrimaryThumbstick.X = primaryThumbstick.x;
+            state.PrimaryThumbstick.Y = primaryThumbstick.y;
+            state.SecondaryThumbstick.X = secondaryThumbstick.x;
+            state.SecondaryThumbstick.Y = secondaryThumbstick.y;
+            client.Send(state.ToByteArray());
         }
         WebSocketEvent wsEvent = client.Poll();
         client.EventQueue.Clear();
