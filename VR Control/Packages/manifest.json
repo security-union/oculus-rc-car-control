@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "com.community.netcode.transport.websocket": "https://github.com/Unity-Technologies/multiplayer-community-contributions.git?path=/Transports/com.community.netcode.transport.websocket",
+    "com.e7.protobuf-unity": "https://github.com/5argon/protobuf-unity.git",
     "com.unity.collab-proxy": "1.15.13",
     "com.unity.feature.development": "1.0.1",
     "com.unity.ide.rider": "3.0.12",
