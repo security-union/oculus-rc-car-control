@@ -23785,7 +23785,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR FingerFeatureConfigList_t0EE1BB85B55BD7045F88
 		int32_t L_2 = ___finger0;
 		NullCheck(L_1);
 		bool L_3;
-		L_3 = InterfaceFuncInvoker2< bool, int32_t, FingerFeatureConfigU5BU5D_tCAACD85F21F10B140260488530E5C5A00A60BA8F** >::Invoke(1 /* System.Boolean System.Collections.Generic.IDictionary`2<Oculus.Interaction.Input.HandFinger,Oculus.Interaction.PoseDetection.ShapeRecognizer/FingerFeatureConfig[]>::TryGetValue(TKey,TValue&) */, IDictionary_2_t804AE5CC8741CB78B8079CFD7C716CFFF6D6393D_il2cpp_TypeInfo_var, L_1, L_2, (&V_0));
+		L_3 = InterfaceFuncInvoker2< bool, int32_t, FingerFeatureConfigU5BU5D_tCAACD85F21F10B140260488530E5C5A00A60BA8F** >::Invoke(7 /* System.Boolean System.Collections.Generic.IDictionary`2<Oculus.Interaction.Input.HandFinger,Oculus.Interaction.PoseDetection.ShapeRecognizer/FingerFeatureConfig[]>::TryGetValue(TKey,TValue&) */, IDictionary_2_t804AE5CC8741CB78B8079CFD7C716CFFF6D6393D_il2cpp_TypeInfo_var, L_1, L_2, (&V_0));
 		V_1 = (bool)((((int32_t)L_3) == ((int32_t)0))? 1 : 0);
 		bool L_4 = V_1;
 		if (!L_4)

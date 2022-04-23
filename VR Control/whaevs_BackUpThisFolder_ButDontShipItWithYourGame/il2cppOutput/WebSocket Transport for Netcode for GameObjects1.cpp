@@ -9936,7 +9936,7 @@ IL_010f:
 				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_18;
 				L_18 = Ext_InternalToByteArray_mEA7D5BA910997E5F619BED71AA02C0AF935FC86A((uint16_t)((int32_t)(uint16_t)L_17), 1, NULL);
 				NullCheck(L_16);
-				VirtualActionInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(35 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_16, L_18, 0, 2);
+				VirtualActionInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(36 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_16, L_18, 0, 2);
 				// if (_payloadLength > 125)
 				uint8_t L_19 = __this->____payloadLength_6;
 				V_2 = (bool)((((int32_t)L_19) > ((int32_t)((int32_t)125)))? 1 : 0);
@@ -9981,7 +9981,7 @@ IL_0085_1:
 IL_0086_1:
 			{
 				NullCheck(G_B5_3);
-				VirtualActionInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(35 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, G_B5_3, G_B5_2, G_B5_1, G_B5_0);
+				VirtualActionInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(36 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, G_B5_3, G_B5_2, G_B5_1, G_B5_0);
 			}
 
 IL_008c_1:
@@ -10000,7 +10000,7 @@ IL_008c_1:
 				MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_26 = V_0;
 				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_27 = __this->____maskingKey_3;
 				NullCheck(L_26);
-				VirtualActionInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(35 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_26, L_27, 0, 4);
+				VirtualActionInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(36 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_26, L_27, 0, 4);
 			}
 
 IL_00a8_1:
@@ -10037,7 +10037,7 @@ IL_00a8_1:
 				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_36 = V_5;
 				NullCheck(L_36);
 				NullCheck(L_34);
-				VirtualActionInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(35 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_34, L_35, 0, ((int32_t)(((RuntimeArray*)L_36)->max_length)));
+				VirtualActionInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(36 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_34, L_35, 0, ((int32_t)(((RuntimeArray*)L_36)->max_length)));
 				goto IL_00f3_1;
 			}
 
@@ -10059,12 +10059,12 @@ IL_00f4_1:
 				// buff.Close ();
 				MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_39 = V_0;
 				NullCheck(L_39);
-				VirtualActionInvoker0::Invoke(19 /* System.Void System.IO.Stream::Close() */, L_39);
+				VirtualActionInvoker0::Invoke(20 /* System.Void System.IO.Stream::Close() */, L_39);
 				// return buff.ToArray ();
 				MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_40 = V_0;
 				NullCheck(L_40);
 				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_41;
-				L_41 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(41 /* System.Byte[] System.IO.MemoryStream::ToArray() */, L_40);
+				L_41 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(42 /* System.Byte[] System.IO.MemoryStream::ToArray() */, L_40);
 				V_7 = L_41;
 				goto IL_0110;
 			}
@@ -30396,7 +30396,7 @@ IL_0082_1:
 				String_t* L_31 = V_4;
 				String_t* L_32 = V_5;
 				NullCheck(L_30);
-				VirtualActionInvoker2< String_t*, String_t* >::Invoke(16 /* System.Void System.Collections.Specialized.NameValueCollection::Add(System.String,System.String) */, L_30, L_31, L_32);
+				VirtualActionInvoker2< String_t*, String_t* >::Invoke(17 /* System.Void System.Collections.Specialized.NameValueCollection::Add(System.String,System.String) */, L_30, L_31, L_32);
 			}
 
 IL_0090_1:

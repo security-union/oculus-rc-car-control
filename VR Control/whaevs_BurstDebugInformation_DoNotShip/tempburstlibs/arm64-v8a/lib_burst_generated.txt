@@ -164,6 +164,7 @@ Library: lib_burst_generated
 --root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/AssistantCoreSDKRuntime.dll
 --root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/Unity.XR.Management.dll
 --root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/Oculus.LipSync.dll
+--root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/E7.ProtobufUnity.dll
 --root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/UnityEngine.SpatialTracking.dll
 --root-assembly=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/Unity.Subsystem.Registration.dll
 --assembly-folder=/Users/darioalessandropersonal/Documents/2022/vr control/VR Control/Temp/StagingArea/Data/Managed/

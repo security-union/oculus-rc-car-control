@@ -21,6 +21,8 @@ public class Streamo : MonoBehaviour
 
     private IWebSocketClient client;
 
+    private OVRManager manager;
+
     public string url = "ws://192.168.18.11:8080/ws";
 
     // Start is called before the first frame update
@@ -30,6 +32,7 @@ public class Streamo : MonoBehaviour
         client = WebSocketClientFactory.Create(url);
         client.Connect();
         Debug.Log("[Streamo] on create");
+        manager = new OVRManager();
     }
 
     // Update is called once per frame
@@ -44,11 +47,15 @@ public class Streamo : MonoBehaviour
         }
         if (client.ReadyState == WebSocketSharp.WebSocketState.Open)
         {
+            OVRInput.Update();
             var primaryThumbstick = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
             var secondaryThumbstick = OVRInput.Get(OVRInput.Axis2D.SecondaryThumbstick);
+
             OculusControllerState state = new OculusControllerState();
+            state.PrimaryThumbstick = new OculusControllerState.Types.Vector2();
             state.PrimaryThumbstick.X = primaryThumbstick.x;
             state.PrimaryThumbstick.Y = primaryThumbstick.y;
+            state.SecondaryThumbstick = new OculusControllerState.Types.Vector2();
             state.SecondaryThumbstick.X = secondaryThumbstick.x;
             state.SecondaryThumbstick.Y = secondaryThumbstick.y;
             client.Send(state.ToByteArray());
