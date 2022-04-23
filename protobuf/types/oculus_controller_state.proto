@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message OculusControllerState {
+
+  message Vector2 {
+    float x = 1;
+    float y = 2;
+  }
+  Vector2 primary_thumbstick = 1;
+  Vector2 secondary_thumbstick = 2;
+}
