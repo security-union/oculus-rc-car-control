@@ -10,7 +10,7 @@
 
 ## Projects breakdown
 
-### Oculus App
+### Oculus Unity App
 
 <https://github.com/security-union/oculus-rc-car-control/tree/main/VR%20Control>
 
