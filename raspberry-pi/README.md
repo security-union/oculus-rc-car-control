@@ -15,9 +15,17 @@ The raspberry PI controls the cameras, the dc motor and the servo.
 The Raspberry PI needs to run 4 apps:
 
 1. Front camera streaming server
+```
+RUST_LOG=info FRAMERATE=30 VIDEO_WIDTH=640 VIDEO_HEIGHT=480 VIDEO_DEVICE_INDEX=0 ENCODER=MJPEG PORT=8081 video-streaming
+```
 
 2. Rear camera streaming server
+```
+RUST_LOG=info FRAMERATE=30 VIDEO_WIDTH=640 VIDEO_HEIGHT=480 VIDEO_DEVICE_INDEX=0 ENCODER=MJPEG PORT=8080 video-streaming
+```
 
 3. Control server and python pwm control
 
-
+```
+RUST_LOG=debug ./servo-control-websocket | sudo python3.9 control_rc.py
+```
