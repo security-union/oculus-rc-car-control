@@ -35,10 +35,10 @@ async def poll_gamepad(queue):
 async def print_stick(queue):
     motor = lgpio.gpiochip_open(0)
     while True:
-        (servo, in1, in2) = round(await queue.get())
-        lgpio.tx_servo(motor, SERVO, servo, SERVO_HZ)
-        lgpio.tx_pwm(motor, IN1, FREQ_HZ, in1)
-        lgpio.tx_pwm(motor, IN2, FREQ_HZ, in2)
+        (servo, in1, in2) = await queue.get()
+        lgpio.tx_servo(motor, SERVO, round(servo), SERVO_HZ)
+        lgpio.tx_pwm(motor, IN1, FREQ_HZ, 100 if in1 > 0 else 0)
+        lgpio.tx_pwm(motor, IN2, FREQ_HZ, 100 if in2 > 0 else 0)
         await asyncio.sleep(0.01)
 
 if __name__ == "__main__":
