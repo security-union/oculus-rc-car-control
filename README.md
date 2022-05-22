@@ -8,5 +8,20 @@
 
 <https://youtu.be/MYJcSZqk_Tg>
 
+## Projects breakdown
+
+### Oculus App
+
+<https://github.com/security-union/oculus-rc-car-control/tree/main/VR%20Control>
+
+### Raspberry PI
+
+<https://github.com/security-union/oculus-rc-car-control/tree/main/raspberry-pi>
+
+### Protobuf
+
+Messages used to communicate the raspberry pi with the Oculus
+
+<https://github.com/security-union/oculus-rc-car-control/tree/main/protobuf>
 
 
