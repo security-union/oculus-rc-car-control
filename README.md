@@ -2,7 +2,7 @@
 
 # 🔥🔥 RASPBERRY PI PROJECTS WITH OCULUS: I HACKED AN RC Car To Drive It With VR! 🔥🔥
 
-## YouTube Video
+## YouTube Video:
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/MYJcSZqk_Tg/maxresdefault.jpg)](https://youtu.be/MYJcSZqk_Tg "YouTube video")
 
