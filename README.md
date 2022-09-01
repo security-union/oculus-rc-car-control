@@ -14,6 +14,14 @@
 
 <https://github.com/security-union/oculus-rc-car-control/tree/main/VR%20Control>
 
+#### Unity instructions
+
+##### Unity Editor Version
+2021.3.8f1
+
+Complete the Official Oculus Tutorial back to back
+https://developer.oculus.com/documentation/unity/unity-gs-overview/
+
 ### Raspberry PI
 
 <https://github.com/security-union/oculus-rc-car-control/tree/main/raspberry-pi>
