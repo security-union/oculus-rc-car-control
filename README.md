@@ -12,8 +12,6 @@
 
 ### Oculus Unity App
 
-<https://github.com/security-union/oculus-rc-car-control/tree/main/VR%20Control>
-
 #### Unity instructions
 
 ##### Unity Editor Version
@@ -21,6 +19,9 @@
 
 Complete the Official Oculus Tutorial back to back
 https://developer.oculus.com/documentation/unity/unity-gs-overview/
+
+Open <https://github.com/security-union/oculus-rc-car-control/tree/main/VR%20Control> and make sure to Set OVRPlugin to Legacy:
+<img width="100%" alt="Schermata 2022-08-31 alle 9 22 28 PM" src="https://user-images.githubusercontent.com/1176339/187812466-7089cf51-85a3-444b-92e4-cbc109dd94e0.png">
 
 ### Raspberry PI
 
