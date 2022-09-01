@@ -46,10 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxInteractors: -1
   _maxSelectingInteractors: -1
-  _relativeTo: {fileID: 4562865803389756423}
+  _pointableElement: {fileID: 4562865803523772795}
   _rigidbody: {fileID: 4562865803523772798}
-  _grabbable: {fileID: 4562865803523772795}
-  _releaseDistance: 0
   _resetGrabOnGrabsUpdated: 1
   _physicsGrabbable: {fileID: 4562865803523772796}
   _scoringModifier:
@@ -70,34 +68,9 @@ MonoBehaviour:
     _ringRequirement: 2
     _pinkyRequirement: 1
     _unselectMode: 0
-  _snapType: 3
-  _travelSpeed: 1
-  _useFixedTravelTime: 0
-  _travelCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  _handGrabPoints: []
+  _movementProvider: {fileID: 0}
+  _handAligment: 1
+  _handGrabPoses: []
 --- !u!114 &517181019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,9 +92,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1059932814}
-  - component: {fileID: 1059932817}
-  - component: {fileID: 1059932816}
-  - component: {fileID: 1059932815}
+  - component: {fileID: 7951712778167352926}
+  - component: {fileID: 7243320490827931303}
   m_Layer: 0
   m_Name: Audio
   m_TagString: Untagged
@@ -148,7 +120,7 @@ Transform:
   m_Father: {fileID: 4562865803389756423}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1059932817
+--- !u!114 &7951712778167352926
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -157,47 +129,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1059932813}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f5531e0e19dff046a5b9f58ee68fe2e, type: 3}
+  m_Script: {fileID: 11500000, guid: e2f8f6e9e6f3e114b9bf9a57c2160615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _grabbable: {fileID: 4562865803523772795}
-  _onAdd:
-    m_PersistentCalls:
-      m_Calls: []
-  _onRemove:
-    m_PersistentCalls:
-      m_Calls: []
-  _onTransfer:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6450404124748125457}
-        m_TargetAssemblyTypeName: Oculus.Interaction.AudioTrigger, Oculus.Interaction.Samples
-        m_MethodName: PlayAudio
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _onUpdate:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &1059932816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1059932813}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1464721f2283eb14e94a33e812b47be4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactableView: {fileID: 1059932815}
+  _pointable: {fileID: 4562865803523772795}
   _whenHover:
     m_PersistentCalls:
       m_Calls: []
@@ -234,13 +169,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _whenInteractorsCountUpdated:
+  _whenMove:
     m_PersistentCalls:
       m_Calls: []
-  _whenSelectingInteractorsCountUpdated:
+  _whenCancel:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1059932815
+--- !u!114 &7243320490827931303
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -249,12 +184,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1059932813}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bff16bb2b8cae9409e88ec4d3527c9b, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c94ad25aabf9b34eb79cd433132dee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactables:
-  - {fileID: 3217242665684024802}
-  - {fileID: 517181018}
+  _rigidbody: {fileID: 4562865803523772798}
+  _impactAudioEvents:
+    _hardCollisionSound: {fileID: 695142421848310217}
+    _softCollisionSound: {fileID: 570930302960395919}
+  _velocitySplit: 1
+  _minimumVelocity: 0.02
+  _timeBetweenCollisions: 0.2
+  _allowMultipleCollisions: 0
 --- !u!1 &3109017958107411281
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,8 +240,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxInteractors: -1
   _maxSelectingInteractors: -1
+  _pointableElement: {fileID: 4562865803523772795}
   _rigidbody: {fileID: 4562865803523772798}
-  _grabbable: {fileID: 4562865803523772795}
   _grabSource: {fileID: 0}
   _useClosestPointAsGrabSource: 0
   _releaseDistance: 0
@@ -562,7 +502,6 @@ GameObject:
   - component: {fileID: 4562865803523772796}
   - component: {fileID: 4562865803523772798}
   - component: {fileID: 4562865803523772800}
-  - component: {fileID: 3437922684191756876}
   m_Layer: 0
   m_Name: Doll
   m_TagString: Untagged
@@ -600,10 +539,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _transferOnSecondSelection: 1
+  _addNewPointsToFront: 0
+  _forwardElement: {fileID: 0}
   _oneGrabTransformer: {fileID: 0}
   _twoGrabTransformer: {fileID: 0}
-  _transferHandOnSecondGrab: 1
-  _addNewGrabsToFront: 0
   _maxGrabPoints: -1
 --- !u!114 &4562865803523772796
 MonoBehaviour:
@@ -664,26 +604,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &3437922684191756876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4562865803389756422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c94ad25aabf9b34eb79cd433132dee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rigidbody: {fileID: 4562865803523772798}
-  _impactAudioEvents:
-    _hardCollisionSound: {fileID: 695142421848310217}
-    _softCollisionSound: {fileID: 570930302960395919}
-  _velocitySplit: 1
-  _minimumVelocity: 0.02
-  _timeBetweenCollisions: 0.2
-  _allowMultipleCollisions: 0
 --- !u!1001 &4562865802158034291
 PrefabInstance:
   m_ObjectHideFlags: 0

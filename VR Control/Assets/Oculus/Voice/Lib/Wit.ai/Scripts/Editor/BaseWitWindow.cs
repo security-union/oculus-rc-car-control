@@ -1,5 +1,6 @@
 /*
- * Copyright (c) Facebook, Inc. and its affiliates.
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
  *
  * This source code is licensed under the license found in the
  * LICENSE file in the root directory of this source tree.
@@ -18,13 +19,12 @@ namespace Facebook.WitAi.Windows
 
         // Override values
         protected abstract GUIContent Title { get; }
-        protected virtual Texture2D HeaderIcon => WitStyles.HeaderIcon;
-        protected virtual string HeaderUrl => WitStyles.WitUrl;
+        protected virtual Texture2D HeaderIcon => WitTexts.HeaderIcon;
+        protected virtual string HeaderUrl => WitTexts.WitUrl;
 
         // Window open
         protected virtual void OnEnable()
         {
-            WitStyles.Init();
             titleContent = Title;
             WitConfigurationUtility.ReloadConfigurationData();
         }

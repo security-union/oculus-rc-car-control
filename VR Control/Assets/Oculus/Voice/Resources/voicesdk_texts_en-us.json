@@ -1,7 +1,8 @@
 {
   "LanguageID": "en-us",
   "SetupTitleLabel": "Welcome to Voice SDK",
-  "SetupSubheaderLabel": "Build Natural Language Experiences\nEmpower people to use your product with voice and text",
+  "SetupHeaderLabel": "Build Natural Language Experiences",
+  "SetupSubheaderLabel": "Empower people to use your product with voice and text.",
   "SetupLanguageLabel": "Select language to use Built-In NLP",
   "AboutTitleLabel": "About Voice SDK",
   "AboutCloseLabel": "Close",
@@ -11,5 +12,7 @@
   "AboutTutorialButtonLabel": "Tutorials",
   "AboutTutorialButtonUrl": "https://developer.oculus.com/experimental/voice-sdk/tutorial-overview/",
   "SettingsTitleLabel": "Voice SDK Settings",
-  "UnderstandingViewerTitleLabel": "Understanding Viewer"
+  "UnderstandingViewerTitleLabel": "Understanding Viewer",
+  "BuiltInAppBtnLabel": "Open Built-In NLP Documentation",
+  "BuiltInAppUrl": "https://developer.oculus.com/documentation/unity/voice-sdk-built-in"
 }

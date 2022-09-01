@@ -1,14 +1,22 @@
-/**************************************************************************************************
- * Copyright : Copyright (c) Facebook Technologies, LLC and its affiliates. All rights reserved.
+/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
  *
- * Your use of this SDK or tool is subject to the Oculus SDK License Agreement, available at
+ * Licensed under the Oculus SDK License Agreement (the "License");
+ * you may not use the Oculus SDK except in compliance with the License,
+ * which is provided at the time of installation or download, or which
+ * otherwise accompanies this software in either electronic or hard copy form.
+ *
+ * You may obtain a copy of the License at
+ *
  * https://developer.oculus.com/licenses/oculussdk/
  *
- * Unless required by applicable law or agreed to in writing, the Utilities SDK distributed
- * under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
- * ANY KIND, either express or implied. See the License for the specific language governing
- * permissions and limitations under the License.
- **************************************************************************************************/
+ * Unless required by applicable law or agreed to in writing, the Oculus SDK
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 using System;
 using System.Collections.Generic;
@@ -25,14 +33,14 @@ namespace Oculus.Voice.Windows
     {
         private int witBuiltInIndex;
         private string[] builtinAppNames;
-        
+
         protected override Texture2D HeaderIcon => VoiceSDKStyles.MainHeader;
         protected override GUIContent Title => VoiceSDKStyles.SetupTitle;
+        protected override string ContentHeaderLabel => VoiceSDKStyles.Texts.SetupHeaderLabel;
         protected override string ContentSubheaderLabel => VoiceSDKStyles.Texts.SetupSubheaderLabel;
 
         protected override void OnEnable()
         {
-            WitAuthUtility.InitEditorTokens();
             WitAuthUtility.tokenValidator = new VoiceSDKTokenValidatorProvider();
             base.OnEnable();
             witBuiltInIndex = 0;
@@ -62,7 +70,7 @@ namespace Oculus.Voice.Windows
                     serverToken = AppBuiltIns.builtInPrefix + builtinAppNames[witBuiltInIndex];
                 }
             }
-            
+
             // Base fields
             if (witBuiltInIndex == 0)
             {
@@ -70,7 +78,7 @@ namespace Oculus.Voice.Windows
                 base.LayoutFields();
             }
         }
-        
+
         // Customize configuration if voice app was selected
         protected override int CreateConfiguration(string newToken)
         {
@@ -79,11 +87,11 @@ namespace Oculus.Voice.Windows
             {
                 return base.CreateConfiguration(newToken);
             }
-            
+
             // Get built in app data
             string languageName = builtinAppNames[witBuiltInIndex];
             Dictionary<string, string> appData = AppBuiltIns.apps[languageName];
-            
+
             // Generate asset using app data
             WitConfiguration configuration = ScriptableObject.CreateInstance<WitConfiguration>();
             configuration.clientAccessToken = appData["clientToken"];
@@ -93,7 +101,7 @@ namespace Oculus.Voice.Windows
             application.lang = appData["lang"];
             configuration.application = application;
             configuration.name = application.id;
-            
+
             // Save configuration to asset
             return WitConfigurationUtility.SaveConfiguration(newToken, configuration);
         }

@@ -1,0 +1,611 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+// 0x00000001 System.Boolean Oculus.VoiceSDK.Utilities.MicPermissionsManager::HasMicPermission()
+extern void MicPermissionsManager_HasMicPermission_m87B33F0E6CFB654B2DF0044F2541297F9454A17D (void);
+// 0x00000002 System.Void Oculus.VoiceSDK.Utilities.MicPermissionsManager::RequestMicPermission()
+extern void MicPermissionsManager_RequestMicPermission_m3A160569AF344AA1190A33AECBA95CA3BDD9132A (void);
+// 0x00000003 System.Void Oculus.VoiceSDK.Utilities.MicPermissionsManager::.ctor()
+extern void MicPermissionsManager__ctor_mCA22E79369F7236DBB729F7992A843B3276F9B6D (void);
+// 0x00000004 System.String[] Oculus.Voice.AppBuiltIns::get_appNames()
+extern void AppBuiltIns_get_appNames_mDF785F6921F49AB5AC3B014A3E43E54EEB91B1E8 (void);
+// 0x00000005 System.Void Oculus.Voice.AppBuiltIns::.cctor()
+extern void AppBuiltIns__cctor_m3FDC271ED7F2EE7AAB8470DFE97B0E0DB6E55FED (void);
+// 0x00000006 Facebook.WitAi.Configuration.WitRuntimeConfiguration Oculus.Voice.AppVoiceExperience::get_RuntimeConfiguration()
+extern void AppVoiceExperience_get_RuntimeConfiguration_mA230CDCD1DD79CDB5228FFB0A412EA7E43F232C0 (void);
+// 0x00000007 System.Void Oculus.Voice.AppVoiceExperience::set_RuntimeConfiguration(Facebook.WitAi.Configuration.WitRuntimeConfiguration)
+extern void AppVoiceExperience_set_RuntimeConfiguration_m84616707444D78F225D0A9E3D03E4D0CA22AB0DA (void);
+// 0x00000008 System.Boolean Oculus.Voice.AppVoiceExperience::get_Initialized()
+extern void AppVoiceExperience_get_Initialized_m97ED7179C4F41C4595B0047A0EC983B5EC186DFA (void);
+// 0x00000009 System.Boolean Oculus.Voice.AppVoiceExperience::get_Active()
+extern void AppVoiceExperience_get_Active_m390651D974B07FC7986545D805DEDEDDC4673895 (void);
+// 0x0000000A System.Boolean Oculus.Voice.AppVoiceExperience::get_IsRequestActive()
+extern void AppVoiceExperience_get_IsRequestActive_mB4603059CD8A43ED20ECBF5B80A98CB157B1DA4E (void);
+// 0x0000000B Facebook.WitAi.Interfaces.ITranscriptionProvider Oculus.Voice.AppVoiceExperience::get_TranscriptionProvider()
+extern void AppVoiceExperience_get_TranscriptionProvider_m8F56136561DEC932BF4DDA39F664EFEDD057E447 (void);
+// 0x0000000C System.Void Oculus.Voice.AppVoiceExperience::set_TranscriptionProvider(Facebook.WitAi.Interfaces.ITranscriptionProvider)
+extern void AppVoiceExperience_set_TranscriptionProvider_mBE2061B4AA36620BC198CE2D0438B79E23A7429A (void);
+// 0x0000000D System.Boolean Oculus.Voice.AppVoiceExperience::get_MicActive()
+extern void AppVoiceExperience_get_MicActive_mD58A0B1D1B4268E01257A19AE9DADF263812426E (void);
+// 0x0000000E System.Boolean Oculus.Voice.AppVoiceExperience::get_ShouldSendMicData()
+extern void AppVoiceExperience_get_ShouldSendMicData_mC0CD3592B73CE03B2517F57D0BFDACBD5126728C (void);
+// 0x0000000F System.Boolean Oculus.Voice.AppVoiceExperience::get_HasPlatformIntegrations()
+extern void AppVoiceExperience_get_HasPlatformIntegrations_mC13C22A105847FA22FD88995434D40766EB16CC2 (void);
+// 0x00000010 System.Boolean Oculus.Voice.AppVoiceExperience::get_EnableConsoleLogging()
+extern void AppVoiceExperience_get_EnableConsoleLogging_mA4FAB753C46C4F0D7291C255D8F5C4E3152EC151 (void);
+// 0x00000011 System.Void Oculus.Voice.AppVoiceExperience::Activate()
+extern void AppVoiceExperience_Activate_m122E8E6EECEA4D3AFE33A27642AFC96E5BF735AA (void);
+// 0x00000012 System.Void Oculus.Voice.AppVoiceExperience::Activate(Facebook.WitAi.Configuration.WitRequestOptions)
+extern void AppVoiceExperience_Activate_m58B58668F005D2406B6BBDC0093A76A176854528 (void);
+// 0x00000013 System.Void Oculus.Voice.AppVoiceExperience::ActivateImmediately()
+extern void AppVoiceExperience_ActivateImmediately_m2466AE6381C6197FAC1A854FF4D69211961EB78F (void);
+// 0x00000014 System.Void Oculus.Voice.AppVoiceExperience::ActivateImmediately(Facebook.WitAi.Configuration.WitRequestOptions)
+extern void AppVoiceExperience_ActivateImmediately_m7DED575C54D423110492A13A869B5F479A356F0A (void);
+// 0x00000015 System.Void Oculus.Voice.AppVoiceExperience::Deactivate()
+extern void AppVoiceExperience_Deactivate_m06734C8C4D6AA23BC95D5ECD09AB569245B32C7E (void);
+// 0x00000016 System.Void Oculus.Voice.AppVoiceExperience::DeactivateAndAbortRequest()
+extern void AppVoiceExperience_DeactivateAndAbortRequest_m18E7597A4EE81B4BAE32C93DBA64130EB5219FED (void);
+// 0x00000017 System.Void Oculus.Voice.AppVoiceExperience::Activate(System.String)
+extern void AppVoiceExperience_Activate_mE2A086508A1C9B280022124B85A357506038A859 (void);
+// 0x00000018 System.Void Oculus.Voice.AppVoiceExperience::Activate(System.String,Facebook.WitAi.Configuration.WitRequestOptions)
+extern void AppVoiceExperience_Activate_m082404E6A18565D726D450578611AA954C14477B (void);
+// 0x00000019 System.Void Oculus.Voice.AppVoiceExperience::InitVoiceSDK()
+extern void AppVoiceExperience_InitVoiceSDK_m32D292065C10F12806D615E70A52C3DE51A623B5 (void);
+// 0x0000001A System.Void Oculus.Voice.AppVoiceExperience::RevertToWitUnity()
+extern void AppVoiceExperience_RevertToWitUnity_m346BC3947D7A11513EFB5124475AABAD5346D7C5 (void);
+// 0x0000001B System.Void Oculus.Voice.AppVoiceExperience::OnEnable()
+extern void AppVoiceExperience_OnEnable_mFA904DED2E6436FA7D1223D4B3F0B4A25854188A (void);
+// 0x0000001C System.Void Oculus.Voice.AppVoiceExperience::OnDisable()
+extern void AppVoiceExperience_OnDisable_mDCE98C5C9A50462AA5061B29091F55EA826EEAB5 (void);
+// 0x0000001D System.Void Oculus.Voice.AppVoiceExperience::OnApplicationFocus(System.Boolean)
+extern void AppVoiceExperience_OnApplicationFocus_m8F49805779857F88CDCB53E78730EE1EC4DABDE9 (void);
+// 0x0000001E System.Void Oculus.Voice.AppVoiceExperience::OnWitResponseListener(Facebook.WitAi.Lib.WitResponseNode)
+extern void AppVoiceExperience_OnWitResponseListener_m8CDF4F647CE7EF232D552580A56F1F53FC4A3D14 (void);
+// 0x0000001F System.Void Oculus.Voice.AppVoiceExperience::OnAborted()
+extern void AppVoiceExperience_OnAborted_mEF5B1C8A495E758374994AE234BE390DB53C8DBD (void);
+// 0x00000020 System.Void Oculus.Voice.AppVoiceExperience::OnError(System.String,System.String)
+extern void AppVoiceExperience_OnError_m3F57C8B6C9EF71552DEFC1B24119CB0EC3038CE5 (void);
+// 0x00000021 System.Void Oculus.Voice.AppVoiceExperience::OnStartedListening()
+extern void AppVoiceExperience_OnStartedListening_m1B032B403E9F607D166D9B275C6B2790292EEB65 (void);
+// 0x00000022 System.Void Oculus.Voice.AppVoiceExperience::OnMicDataSent()
+extern void AppVoiceExperience_OnMicDataSent_mD8EB7402399CBD6160E0F6847E50D46DD401445F (void);
+// 0x00000023 System.Void Oculus.Voice.AppVoiceExperience::.ctor()
+extern void AppVoiceExperience__ctor_mBAABF86A9EA449A140B9A3E681EF9105FFF034A2 (void);
+// 0x00000024 System.Void Oculus.Voice.AppVoiceExperience::<InitVoiceSDK>b__34_0()
+extern void AppVoiceExperience_U3CInitVoiceSDKU3Eb__34_0_m9E02A4F3D5A17EF2956E6B0FCAA7C0BB398C6C62 (void);
+// 0x00000025 System.Boolean Oculus.Voice.Interfaces.IPlatformVoiceService::get_PlatformSupportsWit()
+// 0x00000026 System.Void Oculus.Voice.Interfaces.IPlatformVoiceService::SetRuntimeConfiguration(Facebook.WitAi.Configuration.WitRuntimeConfiguration)
+// 0x00000027 System.Boolean Oculus.Voice.Interfaces.IVoiceSDKLogger::get_IsUsingPlatformIntegration()
+// 0x00000028 System.Void Oculus.Voice.Interfaces.IVoiceSDKLogger::set_IsUsingPlatformIntegration(System.Boolean)
+// 0x00000029 System.Boolean Oculus.Voice.Interfaces.IVoiceSDKLogger::get_ShouldLogToConsole()
+// 0x0000002A System.Void Oculus.Voice.Interfaces.IVoiceSDKLogger::set_ShouldLogToConsole(System.Boolean)
+// 0x0000002B System.String Oculus.Voice.Interfaces.IVoiceSDKLogger::get_WitApplication()
+// 0x0000002C System.Void Oculus.Voice.Interfaces.IVoiceSDKLogger::set_WitApplication(System.String)
+// 0x0000002D System.Void Oculus.Voice.Interfaces.IVoiceSDKLogger::LogInteractionStart(System.String,System.String)
+// 0x0000002E System.Void Oculus.Voice.Interfaces.IVoiceSDKLogger::LogInteractionEndSuccess()
+// 0x0000002F System.Void Oculus.Voice.Interfaces.IVoiceSDKLogger::LogInteractionEndFailure(System.String)
+// 0x00000030 System.Void Oculus.Voice.Interfaces.IVoiceSDKLogger::LogInteractionPoint(System.String)
+// 0x00000031 System.Void Oculus.Voice.Interfaces.IVoiceSDKLogger::LogAnnotation(System.String,System.String)
+// 0x00000032 System.Void Oculus.Voice.Bindings.Android.IVCBindingEvents::OnServiceNotAvailable(System.String,System.String)
+// 0x00000033 System.Void Oculus.Voice.Bindings.Android.VoiceSDKBinding::.ctor(UnityEngine.AndroidJavaObject)
+extern void VoiceSDKBinding__ctor_m3001B3D10803F447B38489ABE06384CB11F7D65C (void);
+// 0x00000034 System.Boolean Oculus.Voice.Bindings.Android.VoiceSDKBinding::get_Active()
+extern void VoiceSDKBinding_get_Active_mD3DC2E21C48504508A4BA471D90DF2A72601D172 (void);
+// 0x00000035 System.Boolean Oculus.Voice.Bindings.Android.VoiceSDKBinding::get_IsRequestActive()
+extern void VoiceSDKBinding_get_IsRequestActive_mB32B7327F5F82796F4D6358164028E53686903DC (void);
+// 0x00000036 System.Boolean Oculus.Voice.Bindings.Android.VoiceSDKBinding::get_MicActive()
+extern void VoiceSDKBinding_get_MicActive_m9489251FE1B2A59DE39FA58F94C95C8628F56219 (void);
+// 0x00000037 System.Boolean Oculus.Voice.Bindings.Android.VoiceSDKBinding::get_PlatformSupportsWit()
+extern void VoiceSDKBinding_get_PlatformSupportsWit_m19DB6531CDA2434ADABE06C5310FA94A370C5F18 (void);
+// 0x00000038 System.Void Oculus.Voice.Bindings.Android.VoiceSDKBinding::Activate(System.String)
+extern void VoiceSDKBinding_Activate_m74E00EC0B16B2996422598D015FF4A929B59850C (void);
+// 0x00000039 System.Void Oculus.Voice.Bindings.Android.VoiceSDKBinding::Activate(System.String,Facebook.WitAi.Configuration.WitRequestOptions)
+extern void VoiceSDKBinding_Activate_mCEF14E1BA843825751801970A35069ED94B34216 (void);
+// 0x0000003A System.Void Oculus.Voice.Bindings.Android.VoiceSDKBinding::Activate()
+extern void VoiceSDKBinding_Activate_mA000DD248AF9DB80AB7E5A0132FB9C1ED16B07D6 (void);
+// 0x0000003B System.Void Oculus.Voice.Bindings.Android.VoiceSDKBinding::Activate(Facebook.WitAi.Configuration.WitRequestOptions)
+extern void VoiceSDKBinding_Activate_m4683EC76B9A56D993E540774768B88FD8E79A84A (void);
+// 0x0000003C System.Void Oculus.Voice.Bindings.Android.VoiceSDKBinding::ActivateImmediately()
+extern void VoiceSDKBinding_ActivateImmediately_m80767C9BF3CEF14CA6CF9D8FF06092379DDF37B1 (void);
+// 0x0000003D System.Void Oculus.Voice.Bindings.Android.VoiceSDKBinding::ActivateImmediately(Facebook.WitAi.Configuration.WitRequestOptions)
+extern void VoiceSDKBinding_ActivateImmediately_m473FE539750900CED4AC7999E13FD4FBFC67D90F (void);
+// 0x0000003E System.Void Oculus.Voice.Bindings.Android.VoiceSDKBinding::Deactivate()
+extern void VoiceSDKBinding_Deactivate_mB0F3CE4FF5E8579CEAC78F717250E951B5DEEF71 (void);
+// 0x0000003F System.Void Oculus.Voice.Bindings.Android.VoiceSDKBinding::DeactivateAndAbortRequest()
+extern void VoiceSDKBinding_DeactivateAndAbortRequest_m84DF1F32E12D4FF53F50C0680F684256537761BC (void);
+// 0x00000040 System.Void Oculus.Voice.Bindings.Android.VoiceSDKBinding::SetRuntimeConfiguration(Facebook.WitAi.Configuration.WitRuntimeConfiguration)
+extern void VoiceSDKBinding_SetRuntimeConfiguration_m2E5B706733A4D5A33D3167E388D7FC68B95565AF (void);
+// 0x00000041 System.Void Oculus.Voice.Bindings.Android.VoiceSDKBinding::SetListener(Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding)
+extern void VoiceSDKBinding_SetListener_mECA88A4F2258C2C48FBB5B245222EC4E42A2FBB5 (void);
+// 0x00000042 System.Void Oculus.Voice.Bindings.Android.VoiceSDKBinding::Connect()
+extern void VoiceSDKBinding_Connect_m98EB7BC47E670145423665DB7E2A23BB84BB05AF (void);
+// 0x00000043 System.Void Oculus.Voice.Bindings.Android.VoiceSDKConfigBinding::.ctor(Facebook.WitAi.Configuration.WitRuntimeConfiguration)
+extern void VoiceSDKConfigBinding__ctor_m32A41B2A486F2E0315E1BDC636B53782723E8E66 (void);
+// 0x00000044 UnityEngine.AndroidJavaObject Oculus.Voice.Bindings.Android.VoiceSDKConfigBinding::ToJavaObject()
+extern void VoiceSDKConfigBinding_ToJavaObject_m861460742482EB29DF6B5BB913D5C55EFD17A4BA (void);
+// 0x00000045 System.Boolean Oculus.Voice.Bindings.Android.VoiceSDKConsoleLoggerImpl::get_IsUsingPlatformIntegration()
+extern void VoiceSDKConsoleLoggerImpl_get_IsUsingPlatformIntegration_mAA6B3A6F6D6A48E8AE0488255A7A9D9DED1FE62B (void);
+// 0x00000046 System.Void Oculus.Voice.Bindings.Android.VoiceSDKConsoleLoggerImpl::set_IsUsingPlatformIntegration(System.Boolean)
+extern void VoiceSDKConsoleLoggerImpl_set_IsUsingPlatformIntegration_m4733A12A1319BAD580176A10447BF98C13E1B24E (void);
+// 0x00000047 System.String Oculus.Voice.Bindings.Android.VoiceSDKConsoleLoggerImpl::get_WitApplication()
+extern void VoiceSDKConsoleLoggerImpl_get_WitApplication_m66FBEEF0164A7B99A929B0D441BE470A3B58DA04 (void);
+// 0x00000048 System.Void Oculus.Voice.Bindings.Android.VoiceSDKConsoleLoggerImpl::set_WitApplication(System.String)
+extern void VoiceSDKConsoleLoggerImpl_set_WitApplication_mEABF47ABA47F9553FC766F24DA52ABA02B995CDB (void);
+// 0x00000049 System.Boolean Oculus.Voice.Bindings.Android.VoiceSDKConsoleLoggerImpl::get_ShouldLogToConsole()
+extern void VoiceSDKConsoleLoggerImpl_get_ShouldLogToConsole_mA0FAF501EDB57CD8FFCDC8D5597D2667F2411411 (void);
+// 0x0000004A System.Void Oculus.Voice.Bindings.Android.VoiceSDKConsoleLoggerImpl::set_ShouldLogToConsole(System.Boolean)
+extern void VoiceSDKConsoleLoggerImpl_set_ShouldLogToConsole_mE8779A9E0E851EE8D0ACE849AC62EAB111ACFAC1 (void);
+// 0x0000004B System.Void Oculus.Voice.Bindings.Android.VoiceSDKConsoleLoggerImpl::LogInteractionStart(System.String,System.String)
+extern void VoiceSDKConsoleLoggerImpl_LogInteractionStart_m94EFD63D01C1369F41FB1494336BF3E6F9D87BC7 (void);
+// 0x0000004C System.Void Oculus.Voice.Bindings.Android.VoiceSDKConsoleLoggerImpl::LogInteractionEndSuccess()
+extern void VoiceSDKConsoleLoggerImpl_LogInteractionEndSuccess_m233FD8E411E01457215C8DE1EC5FB926C37FEFA5 (void);
+// 0x0000004D System.Void Oculus.Voice.Bindings.Android.VoiceSDKConsoleLoggerImpl::LogInteractionEndFailure(System.String)
+extern void VoiceSDKConsoleLoggerImpl_LogInteractionEndFailure_m684015233508453F5CB5FABBA3160C2299E89DFD (void);
+// 0x0000004E System.Void Oculus.Voice.Bindings.Android.VoiceSDKConsoleLoggerImpl::LogInteractionPoint(System.String)
+extern void VoiceSDKConsoleLoggerImpl_LogInteractionPoint_m096BF8C5D4258C30E6AA58AC59A2CCE05FB4BFCD (void);
+// 0x0000004F System.Void Oculus.Voice.Bindings.Android.VoiceSDKConsoleLoggerImpl::LogAnnotation(System.String,System.String)
+extern void VoiceSDKConsoleLoggerImpl_LogAnnotation_mDE0DF37D3DA7A39FE4844FBA6E319ABA3D595395 (void);
+// 0x00000050 System.Void Oculus.Voice.Bindings.Android.VoiceSDKConsoleLoggerImpl::.ctor()
+extern void VoiceSDKConsoleLoggerImpl__ctor_mA8025031B8825072556B925E37275DA4C0113289 (void);
+// 0x00000051 System.Void Oculus.Voice.Bindings.Android.VoiceSDKConsoleLoggerImpl::.cctor()
+extern void VoiceSDKConsoleLoggerImpl__cctor_mF4DB583240C369C9391F84464C7F9FF39AFD69C9 (void);
+// 0x00000052 System.Void Oculus.Voice.Bindings.Android.VoiceSDKImpl::.ctor(Facebook.WitAi.IVoiceService)
+extern void VoiceSDKImpl__ctor_m35A929C24F4C90801C14C885F347C2011F4F6348 (void);
+// 0x00000053 System.Boolean Oculus.Voice.Bindings.Android.VoiceSDKImpl::get_PlatformSupportsWit()
+extern void VoiceSDKImpl_get_PlatformSupportsWit_m372E01C4FEBDC063566D099A673EAFC2702A197E (void);
+// 0x00000054 System.Boolean Oculus.Voice.Bindings.Android.VoiceSDKImpl::get_Active()
+extern void VoiceSDKImpl_get_Active_mD70FF7EB6F3FBB20F5FF3F4BAC05929AC7157A6D (void);
+// 0x00000055 System.Boolean Oculus.Voice.Bindings.Android.VoiceSDKImpl::get_IsRequestActive()
+extern void VoiceSDKImpl_get_IsRequestActive_mE5EB744C7A66DD53FE4B7B5F1653743462C63091 (void);
+// 0x00000056 System.Boolean Oculus.Voice.Bindings.Android.VoiceSDKImpl::get_MicActive()
+extern void VoiceSDKImpl_get_MicActive_mDADE398985B2374337F470B77F5D10197CDAEC25 (void);
+// 0x00000057 System.Void Oculus.Voice.Bindings.Android.VoiceSDKImpl::SetRuntimeConfiguration(Facebook.WitAi.Configuration.WitRuntimeConfiguration)
+extern void VoiceSDKImpl_SetRuntimeConfiguration_mC0918FA50EF8775A49012EC7819253349C796ECD (void);
+// 0x00000058 Facebook.WitAi.Interfaces.ITranscriptionProvider Oculus.Voice.Bindings.Android.VoiceSDKImpl::get_TranscriptionProvider()
+extern void VoiceSDKImpl_get_TranscriptionProvider_m9D488E3011D9B638A1C4A62696B522F3045A4E54 (void);
+// 0x00000059 System.Void Oculus.Voice.Bindings.Android.VoiceSDKImpl::set_TranscriptionProvider(Facebook.WitAi.Interfaces.ITranscriptionProvider)
+extern void VoiceSDKImpl_set_TranscriptionProvider_m2BAF91D1F24E1EF79E521ED09C995F36FEB2E72C (void);
+// 0x0000005A System.Void Oculus.Voice.Bindings.Android.VoiceSDKImpl::Connect()
+extern void VoiceSDKImpl_Connect_mC63D237A04DFDC311A90E60391BC8DDF21F4BD34 (void);
+// 0x0000005B System.Void Oculus.Voice.Bindings.Android.VoiceSDKImpl::Disconnect()
+extern void VoiceSDKImpl_Disconnect_mE3A608B8E60189BA2F5B3898107928B65EF5E0FF (void);
+// 0x0000005C System.Void Oculus.Voice.Bindings.Android.VoiceSDKImpl::OnStoppedListening()
+extern void VoiceSDKImpl_OnStoppedListening_mA1756BD9180B56077E95BCC85BCB126D14A6BFD2 (void);
+// 0x0000005D System.Void Oculus.Voice.Bindings.Android.VoiceSDKImpl::Activate(System.String)
+extern void VoiceSDKImpl_Activate_mBAB11D2BFABAD73C9EEA6B67E845A0963E8BD553 (void);
+// 0x0000005E System.Void Oculus.Voice.Bindings.Android.VoiceSDKImpl::Activate(System.String,Facebook.WitAi.Configuration.WitRequestOptions)
+extern void VoiceSDKImpl_Activate_m9798F3239FE38F6986296A126C2099A7C9AAFD2D (void);
+// 0x0000005F System.Void Oculus.Voice.Bindings.Android.VoiceSDKImpl::Activate()
+extern void VoiceSDKImpl_Activate_m5B4850B2D285877E77FEE40F099226C951C418AB (void);
+// 0x00000060 System.Void Oculus.Voice.Bindings.Android.VoiceSDKImpl::Activate(Facebook.WitAi.Configuration.WitRequestOptions)
+extern void VoiceSDKImpl_Activate_m8EEEAD91E9D26043C3605EB27BF3FD4D404E374D (void);
+// 0x00000061 System.Void Oculus.Voice.Bindings.Android.VoiceSDKImpl::ActivateImmediately()
+extern void VoiceSDKImpl_ActivateImmediately_m64D4DDF5573057E516D1D939511DFB5719F84A51 (void);
+// 0x00000062 System.Void Oculus.Voice.Bindings.Android.VoiceSDKImpl::ActivateImmediately(Facebook.WitAi.Configuration.WitRequestOptions)
+extern void VoiceSDKImpl_ActivateImmediately_m33C638C6440CEFCBB28345FF1625C4BB6EEBFFA7 (void);
+// 0x00000063 System.Void Oculus.Voice.Bindings.Android.VoiceSDKImpl::Deactivate()
+extern void VoiceSDKImpl_Deactivate_m2482B0524373AEFFBB3781A998EFB66EABF1BDA3 (void);
+// 0x00000064 System.Void Oculus.Voice.Bindings.Android.VoiceSDKImpl::DeactivateAndAbortRequest()
+extern void VoiceSDKImpl_DeactivateAndAbortRequest_mD696A792F89B36284EA106562440B571FD176E4C (void);
+// 0x00000065 System.Void Oculus.Voice.Bindings.Android.VoiceSDKImpl::OnServiceNotAvailable(System.String,System.String)
+extern void VoiceSDKImpl_OnServiceNotAvailable_m238DC4A14BA880DF4ED69D9BFF6773B349A92821 (void);
+// 0x00000066 Facebook.WitAi.Events.VoiceEvents Oculus.Voice.Bindings.Android.VoiceSDKImpl::get_VoiceEvents()
+extern void VoiceSDKImpl_get_VoiceEvents_m219BECF56E6198225AB4A6243AE27A9C5D354B4E (void);
+// 0x00000067 System.Void Oculus.Voice.Bindings.Android.VoiceSDKImpl::set_VoiceEvents(Facebook.WitAi.Events.VoiceEvents)
+extern void VoiceSDKImpl_set_VoiceEvents_m7263658123858DE492903346E3F12454304C37EE (void);
+// 0x00000068 Facebook.WitAi.Events.VoiceEvents Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding::get_VoiceEvents()
+extern void VoiceSDKListenerBinding_get_VoiceEvents_m71FCB3CCE85DC611F18E05D1CB21FC8CD828B329 (void);
+// 0x00000069 System.Void Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding::.ctor(Facebook.WitAi.IVoiceService,Oculus.Voice.Bindings.Android.IVCBindingEvents)
+extern void VoiceSDKListenerBinding__ctor_m31AD9A5936A160886D928B31D81F39C77513765D (void);
+// 0x0000006A System.Void Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding::onResponse(System.String)
+extern void VoiceSDKListenerBinding_onResponse_mCD954E5E2AF77EC1AE5C0B3D55C9A76BD6F8EFE8 (void);
+// 0x0000006B System.Void Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding::onPartialResponse(System.String)
+extern void VoiceSDKListenerBinding_onPartialResponse_m14C71A04CFE12D0FFDB9CB276F0C86B8C82CA447 (void);
+// 0x0000006C System.Void Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding::onError(System.String,System.String,System.String)
+extern void VoiceSDKListenerBinding_onError_m4F8174D0631069422F374E3CF898F9CE466741B0 (void);
+// 0x0000006D System.Void Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding::onAborted()
+extern void VoiceSDKListenerBinding_onAborted_mABAEED54682B187403E66B01299D78E0373A32E1 (void);
+// 0x0000006E System.Void Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding::onRequestCompleted()
+extern void VoiceSDKListenerBinding_onRequestCompleted_mE1483543C7B5C5CB3E55F6D8F414E1FFCF39B67E (void);
+// 0x0000006F System.Void Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding::onMicLevelChanged(System.Single)
+extern void VoiceSDKListenerBinding_onMicLevelChanged_m43C06324CBCBD1C2692A9C72DB61113A0040999B (void);
+// 0x00000070 System.Void Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding::onRequestCreated()
+extern void VoiceSDKListenerBinding_onRequestCreated_m7808F18247655B82620251AFD14640CE80C39D54 (void);
+// 0x00000071 System.Void Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding::onStartListening()
+extern void VoiceSDKListenerBinding_onStartListening_mE352EEB55023FF09AF82AB90FE1E9FA5549EA70F (void);
+// 0x00000072 System.Void Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding::onStoppedListening(System.Int32)
+extern void VoiceSDKListenerBinding_onStoppedListening_m32C92667EF3FD0350B528898375ED90B37A1CCE6 (void);
+// 0x00000073 System.Void Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding::onMicDataSent()
+extern void VoiceSDKListenerBinding_onMicDataSent_m282D8BA4BFC3A94A9FD04385FB284CB976499B47 (void);
+// 0x00000074 System.Void Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding::onMinimumWakeThresholdHit()
+extern void VoiceSDKListenerBinding_onMinimumWakeThresholdHit_m5CE35BC05074FA0E58D2D919517CB4B8AA8DBCDF (void);
+// 0x00000075 System.Void Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding::onPartialTranscription(System.String)
+extern void VoiceSDKListenerBinding_onPartialTranscription_mBFD041B8FBC8A77436A557355259313BEAF5BFA9 (void);
+// 0x00000076 System.Void Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding::onFullTranscription(System.String)
+extern void VoiceSDKListenerBinding_onFullTranscription_mCAFD20DB9F2788E0279048D6B8EFD67BA893A7D6 (void);
+// 0x00000077 System.Void Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding::onServiceNotAvailable(System.String,System.String)
+extern void VoiceSDKListenerBinding_onServiceNotAvailable_mC60311EA03923B7E893C71665737A3FDCF20B336 (void);
+// 0x00000078 System.Void Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding::<onResponse>b__5_0(System.String,System.Boolean)
+extern void VoiceSDKListenerBinding_U3ConResponseU3Eb__5_0_m4217A92E6CF2F63384D696FDB0C52D93388F55BE (void);
+// 0x00000079 System.Void Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding::<onResponse>b__5_1(Facebook.WitAi.Lib.WitResponseNode,System.Boolean)
+extern void VoiceSDKListenerBinding_U3ConResponseU3Eb__5_1_mCB0C29E5EFFE425FEECA57D86C1B20DEA4A912B5 (void);
+// 0x0000007A System.Void Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding::<onPartialResponse>b__6_0(System.String,System.Boolean)
+extern void VoiceSDKListenerBinding_U3ConPartialResponseU3Eb__6_0_mDB138A8EF495B101183A71A808B06A0106F02ACE (void);
+// 0x0000007B System.Void Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding/<>c::.cctor()
+extern void U3CU3Ec__cctor_mE383C507A50803B62C0747FC8AE183101F7A3AFA (void);
+// 0x0000007C System.Void Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding/<>c::.ctor()
+extern void U3CU3Ec__ctor_m16EEBCFB81FCC410AA06F134D3AE0B705FA8C5FE (void);
+// 0x0000007D System.Void Oculus.Voice.Bindings.Android.VoiceSDKListenerBinding/<>c::<onPartialResponse>b__6_1(Facebook.WitAi.Lib.WitResponseNode,System.Boolean)
+extern void U3CU3Ec_U3ConPartialResponseU3Eb__6_1_mF4E51C0600D35369B2CA082958515BB6CE8B4E03 (void);
+// 0x0000007E System.Void Oculus.Voice.Bindings.Android.VoiceSDKLoggerBinding::.ctor(UnityEngine.AndroidJavaObject)
+extern void VoiceSDKLoggerBinding__ctor_m71079AD04BD0BE81CAD19095DBB7185951D560C0 (void);
+// 0x0000007F System.Void Oculus.Voice.Bindings.Android.VoiceSDKLoggerBinding::Connect()
+extern void VoiceSDKLoggerBinding_Connect_m6DFF938809261BA21AD1BD96E62A053EED35DF2B (void);
+// 0x00000080 System.Void Oculus.Voice.Bindings.Android.VoiceSDKLoggerBinding::LogInteractionStart(System.String,System.String)
+extern void VoiceSDKLoggerBinding_LogInteractionStart_mD612DDC49A126E25914B60C55989CA04AB67025B (void);
+// 0x00000081 System.Void Oculus.Voice.Bindings.Android.VoiceSDKLoggerBinding::LogInteractionEndSuccess(System.String)
+extern void VoiceSDKLoggerBinding_LogInteractionEndSuccess_m407F2877D8B636E6F4675E265D5CA4ACF2C8C08C (void);
+// 0x00000082 System.Void Oculus.Voice.Bindings.Android.VoiceSDKLoggerBinding::LogInteractionEndFailure(System.String,System.String)
+extern void VoiceSDKLoggerBinding_LogInteractionEndFailure_m933ABDC2B40DEC958B5BFB019F72DD29558FD744 (void);
+// 0x00000083 System.Void Oculus.Voice.Bindings.Android.VoiceSDKLoggerBinding::LogInteractionPoint(System.String,System.String)
+extern void VoiceSDKLoggerBinding_LogInteractionPoint_m5FFB6AA63633B33DCA4BEAB52AE289ADE8DFE98D (void);
+// 0x00000084 System.Void Oculus.Voice.Bindings.Android.VoiceSDKLoggerBinding::LogAnnotation(System.String,System.String)
+extern void VoiceSDKLoggerBinding_LogAnnotation_mD42FCA4FEA6D019859CE678F6A607E90A3ABD560 (void);
+// 0x00000085 System.Boolean Oculus.Voice.Bindings.Android.VoiceSDKPlatformLoggerImpl::get_IsUsingPlatformIntegration()
+extern void VoiceSDKPlatformLoggerImpl_get_IsUsingPlatformIntegration_m424823FE0495A86AFFE05A0A3B5CD572091061E6 (void);
+// 0x00000086 System.Void Oculus.Voice.Bindings.Android.VoiceSDKPlatformLoggerImpl::set_IsUsingPlatformIntegration(System.Boolean)
+extern void VoiceSDKPlatformLoggerImpl_set_IsUsingPlatformIntegration_mF5F3DB576D0A199D8873C1F289C8F36A8145BA71 (void);
+// 0x00000087 System.String Oculus.Voice.Bindings.Android.VoiceSDKPlatformLoggerImpl::get_WitApplication()
+extern void VoiceSDKPlatformLoggerImpl_get_WitApplication_mC42BDAA3E2669955A05179CECEA0A4FD52BACA2A (void);
+// 0x00000088 System.Void Oculus.Voice.Bindings.Android.VoiceSDKPlatformLoggerImpl::set_WitApplication(System.String)
+extern void VoiceSDKPlatformLoggerImpl_set_WitApplication_mC54C27DF3D45324A8268F8E24D3C49A7233359DE (void);
+// 0x00000089 System.Boolean Oculus.Voice.Bindings.Android.VoiceSDKPlatformLoggerImpl::get_ShouldLogToConsole()
+extern void VoiceSDKPlatformLoggerImpl_get_ShouldLogToConsole_m5A444D8439A252A78A8BDDE49F3863990BB275C5 (void);
+// 0x0000008A System.Void Oculus.Voice.Bindings.Android.VoiceSDKPlatformLoggerImpl::set_ShouldLogToConsole(System.Boolean)
+extern void VoiceSDKPlatformLoggerImpl_set_ShouldLogToConsole_m85207565D6BB379F268872F61CD2CBE8CB9A02D6 (void);
+// 0x0000008B System.Void Oculus.Voice.Bindings.Android.VoiceSDKPlatformLoggerImpl::.ctor()
+extern void VoiceSDKPlatformLoggerImpl__ctor_mF49C5DD56F05A92CCB8BF625EA241536EF79DA82 (void);
+// 0x0000008C System.Void Oculus.Voice.Bindings.Android.VoiceSDKPlatformLoggerImpl::Connect()
+extern void VoiceSDKPlatformLoggerImpl_Connect_m705C0B4595FC303BEB465164FE8DCE5F555C3F87 (void);
+// 0x0000008D System.Void Oculus.Voice.Bindings.Android.VoiceSDKPlatformLoggerImpl::Disconnect()
+extern void VoiceSDKPlatformLoggerImpl_Disconnect_m469CA1B1C095C5BA25532BAA99848FD1AFCFDD52 (void);
+// 0x0000008E System.Void Oculus.Voice.Bindings.Android.VoiceSDKPlatformLoggerImpl::LogInteractionStart(System.String,System.String)
+extern void VoiceSDKPlatformLoggerImpl_LogInteractionStart_m02660CADF4B55C57F1EA491D3555FFB6326F48E6 (void);
+// 0x0000008F System.Void Oculus.Voice.Bindings.Android.VoiceSDKPlatformLoggerImpl::LogInteractionEndSuccess()
+extern void VoiceSDKPlatformLoggerImpl_LogInteractionEndSuccess_mE3FCFBD2259BAAE7CB6A33563C3582D6DEB42572 (void);
+// 0x00000090 System.Void Oculus.Voice.Bindings.Android.VoiceSDKPlatformLoggerImpl::LogInteractionEndFailure(System.String)
+extern void VoiceSDKPlatformLoggerImpl_LogInteractionEndFailure_m5468EA88E66697B10278C8D9C7721E04B27415A5 (void);
+// 0x00000091 System.Void Oculus.Voice.Bindings.Android.VoiceSDKPlatformLoggerImpl::LogInteractionPoint(System.String)
+extern void VoiceSDKPlatformLoggerImpl_LogInteractionPoint_m82313931CD4F1D5EE79C7EE62FDC1915E02540F5 (void);
+// 0x00000092 System.Void Oculus.Voice.Bindings.Android.VoiceSDKPlatformLoggerImpl::LogAnnotation(System.String,System.String)
+extern void VoiceSDKPlatformLoggerImpl_LogAnnotation_m46B23E72276019331108F08E118DBA8D3F305E61 (void);
+static Il2CppMethodPointer s_methodPointers[146] = 
+{
+	MicPermissionsManager_HasMicPermission_m87B33F0E6CFB654B2DF0044F2541297F9454A17D,
+	MicPermissionsManager_RequestMicPermission_m3A160569AF344AA1190A33AECBA95CA3BDD9132A,
+	MicPermissionsManager__ctor_mCA22E79369F7236DBB729F7992A843B3276F9B6D,
+	AppBuiltIns_get_appNames_mDF785F6921F49AB5AC3B014A3E43E54EEB91B1E8,
+	AppBuiltIns__cctor_m3FDC271ED7F2EE7AAB8470DFE97B0E0DB6E55FED,
+	AppVoiceExperience_get_RuntimeConfiguration_mA230CDCD1DD79CDB5228FFB0A412EA7E43F232C0,
+	AppVoiceExperience_set_RuntimeConfiguration_m84616707444D78F225D0A9E3D03E4D0CA22AB0DA,
+	AppVoiceExperience_get_Initialized_m97ED7179C4F41C4595B0047A0EC983B5EC186DFA,
+	AppVoiceExperience_get_Active_m390651D974B07FC7986545D805DEDEDDC4673895,
+	AppVoiceExperience_get_IsRequestActive_mB4603059CD8A43ED20ECBF5B80A98CB157B1DA4E,
+	AppVoiceExperience_get_TranscriptionProvider_m8F56136561DEC932BF4DDA39F664EFEDD057E447,
+	AppVoiceExperience_set_TranscriptionProvider_mBE2061B4AA36620BC198CE2D0438B79E23A7429A,
+	AppVoiceExperience_get_MicActive_mD58A0B1D1B4268E01257A19AE9DADF263812426E,
+	AppVoiceExperience_get_ShouldSendMicData_mC0CD3592B73CE03B2517F57D0BFDACBD5126728C,
+	AppVoiceExperience_get_HasPlatformIntegrations_mC13C22A105847FA22FD88995434D40766EB16CC2,
+	AppVoiceExperience_get_EnableConsoleLogging_mA4FAB753C46C4F0D7291C255D8F5C4E3152EC151,
+	AppVoiceExperience_Activate_m122E8E6EECEA4D3AFE33A27642AFC96E5BF735AA,
+	AppVoiceExperience_Activate_m58B58668F005D2406B6BBDC0093A76A176854528,
+	AppVoiceExperience_ActivateImmediately_m2466AE6381C6197FAC1A854FF4D69211961EB78F,
+	AppVoiceExperience_ActivateImmediately_m7DED575C54D423110492A13A869B5F479A356F0A,
+	AppVoiceExperience_Deactivate_m06734C8C4D6AA23BC95D5ECD09AB569245B32C7E,
+	AppVoiceExperience_DeactivateAndAbortRequest_m18E7597A4EE81B4BAE32C93DBA64130EB5219FED,
+	AppVoiceExperience_Activate_mE2A086508A1C9B280022124B85A357506038A859,
+	AppVoiceExperience_Activate_m082404E6A18565D726D450578611AA954C14477B,
+	AppVoiceExperience_InitVoiceSDK_m32D292065C10F12806D615E70A52C3DE51A623B5,
+	AppVoiceExperience_RevertToWitUnity_m346BC3947D7A11513EFB5124475AABAD5346D7C5,
+	AppVoiceExperience_OnEnable_mFA904DED2E6436FA7D1223D4B3F0B4A25854188A,
+	AppVoiceExperience_OnDisable_mDCE98C5C9A50462AA5061B29091F55EA826EEAB5,
+	AppVoiceExperience_OnApplicationFocus_m8F49805779857F88CDCB53E78730EE1EC4DABDE9,
+	AppVoiceExperience_OnWitResponseListener_m8CDF4F647CE7EF232D552580A56F1F53FC4A3D14,
+	AppVoiceExperience_OnAborted_mEF5B1C8A495E758374994AE234BE390DB53C8DBD,
+	AppVoiceExperience_OnError_m3F57C8B6C9EF71552DEFC1B24119CB0EC3038CE5,
+	AppVoiceExperience_OnStartedListening_m1B032B403E9F607D166D9B275C6B2790292EEB65,
+	AppVoiceExperience_OnMicDataSent_mD8EB7402399CBD6160E0F6847E50D46DD401445F,
+	AppVoiceExperience__ctor_mBAABF86A9EA449A140B9A3E681EF9105FFF034A2,
+	AppVoiceExperience_U3CInitVoiceSDKU3Eb__34_0_m9E02A4F3D5A17EF2956E6B0FCAA7C0BB398C6C62,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	VoiceSDKBinding__ctor_m3001B3D10803F447B38489ABE06384CB11F7D65C,
+	VoiceSDKBinding_get_Active_mD3DC2E21C48504508A4BA471D90DF2A72601D172,
+	VoiceSDKBinding_get_IsRequestActive_mB32B7327F5F82796F4D6358164028E53686903DC,
+	VoiceSDKBinding_get_MicActive_m9489251FE1B2A59DE39FA58F94C95C8628F56219,
+	VoiceSDKBinding_get_PlatformSupportsWit_m19DB6531CDA2434ADABE06C5310FA94A370C5F18,
+	VoiceSDKBinding_Activate_m74E00EC0B16B2996422598D015FF4A929B59850C,
+	VoiceSDKBinding_Activate_mCEF14E1BA843825751801970A35069ED94B34216,
+	VoiceSDKBinding_Activate_mA000DD248AF9DB80AB7E5A0132FB9C1ED16B07D6,
+	VoiceSDKBinding_Activate_m4683EC76B9A56D993E540774768B88FD8E79A84A,
+	VoiceSDKBinding_ActivateImmediately_m80767C9BF3CEF14CA6CF9D8FF06092379DDF37B1,
+	VoiceSDKBinding_ActivateImmediately_m473FE539750900CED4AC7999E13FD4FBFC67D90F,
+	VoiceSDKBinding_Deactivate_mB0F3CE4FF5E8579CEAC78F717250E951B5DEEF71,
+	VoiceSDKBinding_DeactivateAndAbortRequest_m84DF1F32E12D4FF53F50C0680F684256537761BC,
+	VoiceSDKBinding_SetRuntimeConfiguration_m2E5B706733A4D5A33D3167E388D7FC68B95565AF,
+	VoiceSDKBinding_SetListener_mECA88A4F2258C2C48FBB5B245222EC4E42A2FBB5,
+	VoiceSDKBinding_Connect_m98EB7BC47E670145423665DB7E2A23BB84BB05AF,
+	VoiceSDKConfigBinding__ctor_m32A41B2A486F2E0315E1BDC636B53782723E8E66,
+	VoiceSDKConfigBinding_ToJavaObject_m861460742482EB29DF6B5BB913D5C55EFD17A4BA,
+	VoiceSDKConsoleLoggerImpl_get_IsUsingPlatformIntegration_mAA6B3A6F6D6A48E8AE0488255A7A9D9DED1FE62B,
+	VoiceSDKConsoleLoggerImpl_set_IsUsingPlatformIntegration_m4733A12A1319BAD580176A10447BF98C13E1B24E,
+	VoiceSDKConsoleLoggerImpl_get_WitApplication_m66FBEEF0164A7B99A929B0D441BE470A3B58DA04,
+	VoiceSDKConsoleLoggerImpl_set_WitApplication_mEABF47ABA47F9553FC766F24DA52ABA02B995CDB,
+	VoiceSDKConsoleLoggerImpl_get_ShouldLogToConsole_mA0FAF501EDB57CD8FFCDC8D5597D2667F2411411,
+	VoiceSDKConsoleLoggerImpl_set_ShouldLogToConsole_mE8779A9E0E851EE8D0ACE849AC62EAB111ACFAC1,
+	VoiceSDKConsoleLoggerImpl_LogInteractionStart_m94EFD63D01C1369F41FB1494336BF3E6F9D87BC7,
+	VoiceSDKConsoleLoggerImpl_LogInteractionEndSuccess_m233FD8E411E01457215C8DE1EC5FB926C37FEFA5,
+	VoiceSDKConsoleLoggerImpl_LogInteractionEndFailure_m684015233508453F5CB5FABBA3160C2299E89DFD,
+	VoiceSDKConsoleLoggerImpl_LogInteractionPoint_m096BF8C5D4258C30E6AA58AC59A2CCE05FB4BFCD,
+	VoiceSDKConsoleLoggerImpl_LogAnnotation_mDE0DF37D3DA7A39FE4844FBA6E319ABA3D595395,
+	VoiceSDKConsoleLoggerImpl__ctor_mA8025031B8825072556B925E37275DA4C0113289,
+	VoiceSDKConsoleLoggerImpl__cctor_mF4DB583240C369C9391F84464C7F9FF39AFD69C9,
+	VoiceSDKImpl__ctor_m35A929C24F4C90801C14C885F347C2011F4F6348,
+	VoiceSDKImpl_get_PlatformSupportsWit_m372E01C4FEBDC063566D099A673EAFC2702A197E,
+	VoiceSDKImpl_get_Active_mD70FF7EB6F3FBB20F5FF3F4BAC05929AC7157A6D,
+	VoiceSDKImpl_get_IsRequestActive_mE5EB744C7A66DD53FE4B7B5F1653743462C63091,
+	VoiceSDKImpl_get_MicActive_mDADE398985B2374337F470B77F5D10197CDAEC25,
+	VoiceSDKImpl_SetRuntimeConfiguration_mC0918FA50EF8775A49012EC7819253349C796ECD,
+	VoiceSDKImpl_get_TranscriptionProvider_m9D488E3011D9B638A1C4A62696B522F3045A4E54,
+	VoiceSDKImpl_set_TranscriptionProvider_m2BAF91D1F24E1EF79E521ED09C995F36FEB2E72C,
+	VoiceSDKImpl_Connect_mC63D237A04DFDC311A90E60391BC8DDF21F4BD34,
+	VoiceSDKImpl_Disconnect_mE3A608B8E60189BA2F5B3898107928B65EF5E0FF,
+	VoiceSDKImpl_OnStoppedListening_mA1756BD9180B56077E95BCC85BCB126D14A6BFD2,
+	VoiceSDKImpl_Activate_mBAB11D2BFABAD73C9EEA6B67E845A0963E8BD553,
+	VoiceSDKImpl_Activate_m9798F3239FE38F6986296A126C2099A7C9AAFD2D,
+	VoiceSDKImpl_Activate_m5B4850B2D285877E77FEE40F099226C951C418AB,
+	VoiceSDKImpl_Activate_m8EEEAD91E9D26043C3605EB27BF3FD4D404E374D,
+	VoiceSDKImpl_ActivateImmediately_m64D4DDF5573057E516D1D939511DFB5719F84A51,
+	VoiceSDKImpl_ActivateImmediately_m33C638C6440CEFCBB28345FF1625C4BB6EEBFFA7,
+	VoiceSDKImpl_Deactivate_m2482B0524373AEFFBB3781A998EFB66EABF1BDA3,
+	VoiceSDKImpl_DeactivateAndAbortRequest_mD696A792F89B36284EA106562440B571FD176E4C,
+	VoiceSDKImpl_OnServiceNotAvailable_m238DC4A14BA880DF4ED69D9BFF6773B349A92821,
+	VoiceSDKImpl_get_VoiceEvents_m219BECF56E6198225AB4A6243AE27A9C5D354B4E,
+	VoiceSDKImpl_set_VoiceEvents_m7263658123858DE492903346E3F12454304C37EE,
+	VoiceSDKListenerBinding_get_VoiceEvents_m71FCB3CCE85DC611F18E05D1CB21FC8CD828B329,
+	VoiceSDKListenerBinding__ctor_m31AD9A5936A160886D928B31D81F39C77513765D,
+	VoiceSDKListenerBinding_onResponse_mCD954E5E2AF77EC1AE5C0B3D55C9A76BD6F8EFE8,
+	VoiceSDKListenerBinding_onPartialResponse_m14C71A04CFE12D0FFDB9CB276F0C86B8C82CA447,
+	VoiceSDKListenerBinding_onError_m4F8174D0631069422F374E3CF898F9CE466741B0,
+	VoiceSDKListenerBinding_onAborted_mABAEED54682B187403E66B01299D78E0373A32E1,
+	VoiceSDKListenerBinding_onRequestCompleted_mE1483543C7B5C5CB3E55F6D8F414E1FFCF39B67E,
+	VoiceSDKListenerBinding_onMicLevelChanged_m43C06324CBCBD1C2692A9C72DB61113A0040999B,
+	VoiceSDKListenerBinding_onRequestCreated_m7808F18247655B82620251AFD14640CE80C39D54,
+	VoiceSDKListenerBinding_onStartListening_mE352EEB55023FF09AF82AB90FE1E9FA5549EA70F,
+	VoiceSDKListenerBinding_onStoppedListening_m32C92667EF3FD0350B528898375ED90B37A1CCE6,
+	VoiceSDKListenerBinding_onMicDataSent_m282D8BA4BFC3A94A9FD04385FB284CB976499B47,
+	VoiceSDKListenerBinding_onMinimumWakeThresholdHit_m5CE35BC05074FA0E58D2D919517CB4B8AA8DBCDF,
+	VoiceSDKListenerBinding_onPartialTranscription_mBFD041B8FBC8A77436A557355259313BEAF5BFA9,
+	VoiceSDKListenerBinding_onFullTranscription_mCAFD20DB9F2788E0279048D6B8EFD67BA893A7D6,
+	VoiceSDKListenerBinding_onServiceNotAvailable_mC60311EA03923B7E893C71665737A3FDCF20B336,
+	VoiceSDKListenerBinding_U3ConResponseU3Eb__5_0_m4217A92E6CF2F63384D696FDB0C52D93388F55BE,
+	VoiceSDKListenerBinding_U3ConResponseU3Eb__5_1_mCB0C29E5EFFE425FEECA57D86C1B20DEA4A912B5,
+	VoiceSDKListenerBinding_U3ConPartialResponseU3Eb__6_0_mDB138A8EF495B101183A71A808B06A0106F02ACE,
+	U3CU3Ec__cctor_mE383C507A50803B62C0747FC8AE183101F7A3AFA,
+	U3CU3Ec__ctor_m16EEBCFB81FCC410AA06F134D3AE0B705FA8C5FE,
+	U3CU3Ec_U3ConPartialResponseU3Eb__6_1_mF4E51C0600D35369B2CA082958515BB6CE8B4E03,
+	VoiceSDKLoggerBinding__ctor_m71079AD04BD0BE81CAD19095DBB7185951D560C0,
+	VoiceSDKLoggerBinding_Connect_m6DFF938809261BA21AD1BD96E62A053EED35DF2B,
+	VoiceSDKLoggerBinding_LogInteractionStart_mD612DDC49A126E25914B60C55989CA04AB67025B,
+	VoiceSDKLoggerBinding_LogInteractionEndSuccess_m407F2877D8B636E6F4675E265D5CA4ACF2C8C08C,
+	VoiceSDKLoggerBinding_LogInteractionEndFailure_m933ABDC2B40DEC958B5BFB019F72DD29558FD744,
+	VoiceSDKLoggerBinding_LogInteractionPoint_m5FFB6AA63633B33DCA4BEAB52AE289ADE8DFE98D,
+	VoiceSDKLoggerBinding_LogAnnotation_mD42FCA4FEA6D019859CE678F6A607E90A3ABD560,
+	VoiceSDKPlatformLoggerImpl_get_IsUsingPlatformIntegration_m424823FE0495A86AFFE05A0A3B5CD572091061E6,
+	VoiceSDKPlatformLoggerImpl_set_IsUsingPlatformIntegration_mF5F3DB576D0A199D8873C1F289C8F36A8145BA71,
+	VoiceSDKPlatformLoggerImpl_get_WitApplication_mC42BDAA3E2669955A05179CECEA0A4FD52BACA2A,
+	VoiceSDKPlatformLoggerImpl_set_WitApplication_mC54C27DF3D45324A8268F8E24D3C49A7233359DE,
+	VoiceSDKPlatformLoggerImpl_get_ShouldLogToConsole_m5A444D8439A252A78A8BDDE49F3863990BB275C5,
+	VoiceSDKPlatformLoggerImpl_set_ShouldLogToConsole_m85207565D6BB379F268872F61CD2CBE8CB9A02D6,
+	VoiceSDKPlatformLoggerImpl__ctor_mF49C5DD56F05A92CCB8BF625EA241536EF79DA82,
+	VoiceSDKPlatformLoggerImpl_Connect_m705C0B4595FC303BEB465164FE8DCE5F555C3F87,
+	VoiceSDKPlatformLoggerImpl_Disconnect_m469CA1B1C095C5BA25532BAA99848FD1AFCFDD52,
+	VoiceSDKPlatformLoggerImpl_LogInteractionStart_m02660CADF4B55C57F1EA491D3555FFB6326F48E6,
+	VoiceSDKPlatformLoggerImpl_LogInteractionEndSuccess_mE3FCFBD2259BAAE7CB6A33563C3582D6DEB42572,
+	VoiceSDKPlatformLoggerImpl_LogInteractionEndFailure_m5468EA88E66697B10278C8D9C7721E04B27415A5,
+	VoiceSDKPlatformLoggerImpl_LogInteractionPoint_m82313931CD4F1D5EE79C7EE62FDC1915E02540F5,
+	VoiceSDKPlatformLoggerImpl_LogAnnotation_m46B23E72276019331108F08E118DBA8D3F305E61,
+};
+static const int32_t s_InvokerIndices[146] = 
+{
+	12912,
+	12984,
+	7271,
+	12945,
+	12984,
+	7149,
+	5826,
+	7048,
+	7048,
+	7048,
+	7149,
+	5826,
+	7048,
+	7048,
+	7048,
+	7048,
+	7271,
+	5826,
+	7271,
+	5826,
+	7271,
+	7271,
+	5826,
+	3315,
+	7271,
+	7271,
+	7271,
+	7271,
+	5717,
+	5826,
+	7271,
+	3315,
+	7271,
+	7271,
+	7271,
+	7271,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	5826,
+	7048,
+	7048,
+	7048,
+	7048,
+	5826,
+	3315,
+	7271,
+	5826,
+	7271,
+	5826,
+	7271,
+	7271,
+	5826,
+	5826,
+	7271,
+	5826,
+	7149,
+	7048,
+	5717,
+	7149,
+	5826,
+	7048,
+	5717,
+	3315,
+	7271,
+	5826,
+	5826,
+	3315,
+	7271,
+	12984,
+	5826,
+	7048,
+	7048,
+	7048,
+	7048,
+	5826,
+	7149,
+	5826,
+	7271,
+	7271,
+	7271,
+	5826,
+	3315,
+	7271,
+	5826,
+	7271,
+	5826,
+	7271,
+	7271,
+	3315,
+	7149,
+	5826,
+	7149,
+	3315,
+	5826,
+	5826,
+	1858,
+	7271,
+	7271,
+	5875,
+	7271,
+	7271,
+	5788,
+	7271,
+	7271,
+	5826,
+	5826,
+	3315,
+	3301,
+	3301,
+	3301,
+	12984,
+	7271,
+	3301,
+	5826,
+	7271,
+	3315,
+	5826,
+	3315,
+	3315,
+	3315,
+	7048,
+	5717,
+	7149,
+	5826,
+	7048,
+	5717,
+	7271,
+	7271,
+	7271,
+	3315,
+	7271,
+	5826,
+	5826,
+	3315,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_VoiceSDK_Runtime_CodeGenModule;
+const Il2CppCodeGenModule g_VoiceSDK_Runtime_CodeGenModule = 
+{
+	"VoiceSDK.Runtime.dll",
+	146,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL, // module initializer,
+	NULL,
+	NULL,
+	NULL,
+};

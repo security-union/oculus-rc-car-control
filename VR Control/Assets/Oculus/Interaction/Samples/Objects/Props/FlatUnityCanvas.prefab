@@ -1816,6 +1816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxInteractors: -1
   _maxSelectingInteractors: -1
+  _pointableElement: {fileID: 7114770129336771052}
   _proximityField: {fileID: 3440582731702762702}
   _surface: {fileID: 1410754495840873675}
   _maxDistance: 0.01
@@ -1836,7 +1837,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ffe41fe81087fa41a2062cc69b99615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pointable: {fileID: 7114770129336771054}
+  _transferOnSecondSelection: 0
+  _addNewPointsToFront: 0
+  _forwardElement: {fileID: 0}
   _canvas: {fileID: 7114770130731238581}
 --- !u!114 &7114770129336771048
 MonoBehaviour:

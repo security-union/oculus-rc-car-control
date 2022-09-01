@@ -1,5 +1,6 @@
 ﻿/*
- * Copyright (c) Facebook, Inc. and its affiliates.
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
  *
  * This source code is licensed under the license found in the
  * LICENSE file in the root directory of this source tree.
@@ -28,11 +29,11 @@ namespace Facebook.WitAi.Windows
                     }
                     break;
                 case "id":
-                    return WitStyles.Texts.ConfigurationTraitsIdLabel;
+                    return WitTexts.Texts.ConfigurationTraitsIdLabel;
                 case "values":
-                    return WitStyles.Texts.ConfigurationTraitsValuesLabel;
+                    return WitTexts.Texts.ConfigurationTraitsValuesLabel;
             }
-            
+
             // Default to base
             return base.GetLocalizedText(property, key);
         }

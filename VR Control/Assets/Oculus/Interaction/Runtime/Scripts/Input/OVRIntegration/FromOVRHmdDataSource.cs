@@ -1,14 +1,22 @@
-﻿/************************************************************************************
-Copyright : Copyright (c) Facebook Technologies, LLC and its affiliates. All rights reserved.
-
-Your use of this SDK or tool is subject to the Oculus SDK License Agreement, available at
-https://developer.oculus.com/licenses/oculussdk/
-
-Unless required by applicable law or agreed to in writing, the Utilities SDK distributed
-under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
-ANY KIND, either express or implied. See the License for the specific language governing
-permissions and limitations under the License.
-************************************************************************************/
+﻿/*
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
+ *
+ * Licensed under the Oculus SDK License Agreement (the "License");
+ * you may not use the Oculus SDK except in compliance with the License,
+ * which is provided at the time of installation or download, or which
+ * otherwise accompanies this software in either electronic or hard copy form.
+ *
+ * You may obtain a copy of the License at
+ *
+ * https://developer.oculus.com/licenses/oculussdk/
+ *
+ * Unless required by applicable law or agreed to in writing, the Oculus SDK
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 using System;
 using UnityEngine;
@@ -27,6 +35,9 @@ namespace Oculus.Interaction.Input
         public IOVRCameraRigRef CameraRigRef { get; private set; }
 
         [SerializeField]
+        private bool _processLateUpdates = false;
+
+        [SerializeField]
         [Tooltip("If true, uses OVRManager.headPoseRelativeOffset rather than sensor data for " +
                  "HMD pose.")]
         private bool _useOvrManagerEmulatedPose = false;
@@ -35,6 +46,18 @@ namespace Oculus.Interaction.Input
         [SerializeField, Interface(typeof(ITrackingToWorldTransformer))]
         private MonoBehaviour _trackingToWorldTransformer;
         private ITrackingToWorldTransformer TrackingToWorldTransformer;
+
+        public bool ProcessLateUpdates
+        {
+            get
+            {
+                return _processLateUpdates;
+            }
+            set
+            {
+                _processLateUpdates = value;
+            }
+        }
 
         private HmdDataAsset _hmdDataAsset = new HmdDataAsset();
         private HmdDataSourceConfig _config;
@@ -47,9 +70,38 @@ namespace Oculus.Interaction.Input
 
         protected override void Start()
         {
-            base.Start();
+            this.BeginStart(ref _started, () => base.Start());
             Assert.IsNotNull(CameraRigRef);
             Assert.IsNotNull(TrackingToWorldTransformer);
+            this.EndStart(ref _started);
+        }
+
+        protected override void OnEnable()
+        {
+            base.OnEnable();
+            if (_started)
+            {
+                CameraRigRef.WhenInputDataDirtied += HandleInputDataDirtied;
+            }
+        }
+
+        protected override void OnDisable()
+        {
+            if (_started)
+            {
+                CameraRigRef.WhenInputDataDirtied -= HandleInputDataDirtied;
+            }
+
+            base.OnDisable();
+        }
+
+        private void HandleInputDataDirtied(bool isLateUpdate)
+        {
+            if (isLateUpdate && !_processLateUpdates)
+            {
+                return;
+            }
+            MarkInputDataRequiresUpdate();
         }
 
         private HmdDataSourceConfig Config
@@ -87,7 +139,7 @@ namespace Oculus.Interaction.Input
             }
             else
             {
-                var previousEyePose = new Pose();
+                var previousEyePose = Pose.identity;
 
                 if (_hmdDataAsset.IsTracked)
                 {

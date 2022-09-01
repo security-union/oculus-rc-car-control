@@ -216,17 +216,21 @@ namespace Oculus.Platform
       UserDataStore_PublicWriteEntry                      = 0x34364A0A,
       User_Get                                            = 0x6BCF9E47,
       User_GetAccessToken                                 = 0x06A85ABE,
+      User_GetBlockedUsers                                = 0x7D201556,
       User_GetLoggedInUser                                = 0x436F345D,
       User_GetLoggedInUserFriends                         = 0x587C2A8D,
       User_GetLoggedInUserFriendsAndRooms                 = 0x5E870B87,
       User_GetLoggedInUserRecentlyMetUsersAndRooms        = 0x295FBA30,
+      User_GetNextBlockedUserArrayPage                    = 0x7C2AFDCB,
       User_GetNextUserAndRoomArrayPage                    = 0x7FBDD2DF,
       User_GetNextUserArrayPage                           = 0x267CF743,
       User_GetNextUserCapabilityArrayPage                 = 0x2309F399,
       User_GetOrgScopedID                                 = 0x18F0B01B,
       User_GetSdkAccounts                                 = 0x67526A83,
       User_GetUserProof                                   = 0x22810483,
+      User_LaunchBlockFlow                                = 0x6FD62528,
       User_LaunchFriendRequestFlow                        = 0x0904B598,
+      User_LaunchUnblockFlow                              = 0x14A22A97,
       Voip_GetMicrophoneAvailability                      = 0x744CE345,
       Voip_SetSystemVoipSuppressed                        = 0x453FC9AA,
 
@@ -385,6 +389,7 @@ namespace Oculus.Platform
     public virtual AssetFileDownloadCancelResult GetAssetFileDownloadCancelResult() { return null; }
     public virtual AssetFileDownloadResult GetAssetFileDownloadResult() { return null; }
     public virtual AssetFileDownloadUpdate GetAssetFileDownloadUpdate() { return null; }
+    public virtual BlockedUserList GetBlockedUserList() { return null; }
     public virtual CalApplicationFinalized GetCalApplicationFinalized() { return null; }
     public virtual CalApplicationProposed GetCalApplicationProposed() { return null; }
     public virtual CalApplicationSuggestionList GetCalApplicationSuggestionList() { return null; }
@@ -525,6 +530,11 @@ namespace Oculus.Platform
           message = new MessageWithAssetFileDownloadUpdate(messageHandle);
           break;
 
+        case Message.MessageType.User_GetBlockedUsers:
+        case Message.MessageType.User_GetNextBlockedUserArrayPage:
+          message = new MessageWithBlockedUserList(messageHandle);
+          break;
+
         case Message.MessageType.Notification_Cal_FinalizeApplication:
           message = new MessageWithCalApplicationFinalized(messageHandle);
           break;
@@ -632,6 +642,10 @@ namespace Oculus.Platform
           message = new MessageWithInvitePanelResultInfo(messageHandle);
           break;
 
+        case Message.MessageType.User_LaunchBlockFlow:
+          message = new MessageWithLaunchBlockFlowResult(messageHandle);
+          break;
+
         case Message.MessageType.User_LaunchFriendRequestFlow:
           message = new MessageWithLaunchFriendRequestFlowResult(messageHandle);
           break;
@@ -639,6 +653,10 @@ namespace Oculus.Platform
         case Message.MessageType.Notification_GroupPresence_InvitationsSent:
         case Message.MessageType.Notification_Session_InvitationsSent:
           message = new MessageWithLaunchInvitePanelFlowResult(messageHandle);
+          break;
+
+        case Message.MessageType.User_LaunchUnblockFlow:
+          message = new MessageWithLaunchUnblockFlowResult(messageHandle);
           break;
 
         case Message.MessageType.Leaderboard_Get:
@@ -1044,6 +1062,18 @@ namespace Oculus.Platform
       var msg = CAPI.ovr_Message_GetNativeMessage(c_message);
       var obj = CAPI.ovr_Message_GetAssetFileDownloadUpdate(msg);
       return new AssetFileDownloadUpdate(obj);
+    }
+
+  }
+  public class MessageWithBlockedUserList : Message<BlockedUserList>
+  {
+    public MessageWithBlockedUserList(IntPtr c_message) : base(c_message) { }
+    public override BlockedUserList GetBlockedUserList() { return Data; }
+    protected override BlockedUserList GetDataFromMessage(IntPtr c_message)
+    {
+      var msg = CAPI.ovr_Message_GetNativeMessage(c_message);
+      var obj = CAPI.ovr_Message_GetBlockedUserArray(msg);
+      return new BlockedUserList(obj);
     }
 
   }

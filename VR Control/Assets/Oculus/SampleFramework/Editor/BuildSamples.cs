@@ -35,17 +35,6 @@ partial class OculusBuildSamples
         Build("DebugUI");
     }
 
-    // Note this APK isn't fully functional without some additional
-    // build steps listed here:
-    // ovrsource/arvr/projects/integrations/UnitySampleFramework/Assets/Oculus/SampleFramework/Usage/Firebase/README.md
-    //
-    // Here we are only building the smaller (incomplete) build. It's
-    // not perfect  but it's better than nothing.
-    static void BuildFirebase() {
-        InitializeBuild("com.oculus.unitysample.firebase");
-        Build("Firebase");
-    }
-
     static void BuildHandsInteractionTrain() {
         InitializeBuild("com.oculus.unitysample.handsinteractiontrain");
         Build("HandsInteractionTrainScene");
@@ -72,7 +61,23 @@ partial class OculusBuildSamples
         // TODO: enable OpenXR so Passthrough works
         Build("Passthrough");
     }
+    //needs openXR backend in ovrplugin
+    static void BuildBouncingBall() {
+        InitializeBuild("com.oculus.unitysample.bouncingball");
+        Build("BouncingBall");
+    }
 
+    //needs openXR backend in ovrplugin
+    static void BuildShowSceneModel() {
+        InitializeBuild("com.oculus.unitysample.scenemanager");
+        Build("SceneManager");
+    }
+
+    //needs openXR backend in ovrplugin
+    static void BuildVirtualFurniture() {
+        InitializeBuild("com.oculus.unitysample.virtualfurniture");
+        Build("VirtualFurniture");
+    }
     //Reach out to Irad Ratamasky(iradicator) or Rohit Rao (rohitrao) for issues related to enchanced compositor
     static void BuildEnhancedOVROverlay() {
         InitializeBuild("com.oculus.samples_2DPanel");
@@ -95,6 +100,7 @@ partial class OculusBuildSamples
                 "Assets/Oculus/SampleFramework/Usage/OVROverlay.unity",
                 "Assets/Oculus/SampleFramework/Usage/OVROverlayCanvas.unity",
                 "Assets/Oculus/SampleFramework/Usage/Passthrough.unity",
+                "Assets/Oculus/SampleFramework/Usage/SceneManager.unity"
             });
     }
 

@@ -1,5 +1,6 @@
 ﻿/*
- * Copyright (c) Facebook, Inc. and its affiliates.
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * All rights reserved.
  *
  * This source code is licensed under the license found in the
  * LICENSE file in the root directory of this source tree.
@@ -23,21 +24,21 @@ namespace Facebook.WitAi.Windows
             switch (key)
             {
                 case LocalizedTitleKey:
-                    return WitStyles.Texts.ConfigurationApplicationTabLabel;
+                    return WitTexts.Texts.ConfigurationApplicationTabLabel;
                 case LocalizedMissingKey:
-                    return WitStyles.Texts.ConfigurationApplicationMissingLabel;
+                    return WitTexts.Texts.ConfigurationApplicationMissingLabel;
                 case "name":
-                    return WitStyles.Texts.ConfigurationApplicationNameLabel;
+                    return WitTexts.Texts.ConfigurationApplicationNameLabel;
                 case "id":
-                    return WitStyles.Texts.ConfigurationApplicationIdLabel;
+                    return WitTexts.Texts.ConfigurationApplicationIdLabel;
                 case "lang":
-                    return WitStyles.Texts.ConfigurationApplicationLanguageLabel;
+                    return WitTexts.Texts.ConfigurationApplicationLanguageLabel;
                 case "isPrivate":
-                    return WitStyles.Texts.ConfigurationApplicationPrivateLabel;
+                    return WitTexts.Texts.ConfigurationApplicationPrivateLabel;
                 case "createdAt":
-                    return WitStyles.Texts.ConfigurationApplicationCreatedLabel;
+                    return WitTexts.Texts.ConfigurationApplicationCreatedLabel;
             }
-            
+
             // Default to base
             return base.GetLocalizedText(property, key);
         }
